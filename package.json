@@ -1,0 +1,34 @@
+{
+  "name": "polyfull",
+  "version": "0.0.1",
+  "description": "supercharge javascript",
+  "main": "dist/index.js",
+  "private": false,
+  "prettier": "@giovannicardamone/prettier-config",
+  "eslintConfig": {
+    "extends": "@giovannicardamone"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiovanniCardamone/polyfull.git"
+  },
+  "keywords": [
+    "javascript",
+    "polyfill"
+  ],
+  "author": "Giovanni Cardamone <g.cardamone2@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GiovanniCardamone/polyfull/issues"
+  },
+  "homepage": "https://github.com/GiovanniCardamone/polyfull#readme",
+  "devDependencies": {
+    "@giovannicardamone/eslint-config": "^0.0.1",
+    "@giovannicardamone/prettier-config": "^0.0.2",
+    "@types/node": "^16.4.8"
+  }
+}

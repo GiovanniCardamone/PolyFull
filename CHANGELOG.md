@@ -1,4 +1,8 @@
-# 0.2.0 (2021-08-01)
+## [0.2.1](https://github.com/GiovanniCardamone/polyfull/compare/v0.2.0...v0.2.1) (2021-08-01)
+
+
+
+# [0.2.0](https://github.com/GiovanniCardamone/polyfull/compare/3d1f051ce8af0a6fabe8408d1a779b3964e62c85...v0.2.0) (2021-08-01)
 
 
 ### Bug Fixes

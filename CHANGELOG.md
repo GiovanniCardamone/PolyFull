@@ -1,3 +1,12 @@
+## [0.2.3](https://github.com/GiovanniCardamone/polyfull/compare/v0.2.2...v0.2.3) (2021-08-01)
+
+
+### Bug Fixes
+
+* package dependencies ([555919b](https://github.com/GiovanniCardamone/polyfull/commit/555919be9217f7695f65aa9a856116d7e763344e))
+
+
+
 ## [0.2.2](https://github.com/GiovanniCardamone/polyfull/compare/v0.2.1...v0.2.2) (2021-08-01)
 
 

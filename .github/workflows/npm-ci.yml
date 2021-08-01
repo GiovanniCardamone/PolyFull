@@ -1,0 +1,72 @@
+name: Release Package
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  # build / test
+  Build:
+    name: Build Package
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout Repo
+      - uses: actions/checkout@v2
+
+      # Setup Node
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      # Install Dependencies
+      - run: npm ci
+
+      # Build Package
+      - run: npm run build
+
+      # Run Tests
+      - run: npm test
+
+  # create / release
+  Release:
+    needs: Build
+    name: Create Release Package
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout Repo
+      - uses: actions/checkout@v2
+
+      # Setup Node
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      # Show current package
+      - name: cat package.json
+        run: cat ./package.json
+
+      # Install Dependencies
+      - run: npm ci
+
+      # Bump version, tag commit and generate a changelog
+      - name: Conventional Changelog Action
+        uses: TriPSs/conventional-changelog-action@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          git-message: 'chore(release): {version}'
+          tag-prefix: 'v'
+          output-file: 'CHANGELOG.md'
+          release-count: '10'
+          skip-on-empty: 'false'
+          skip-version-file: 'false'
+          skip-commit: 'false'
+
+      # Publish to NPM
+      - name: Publish to NPM
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+
+

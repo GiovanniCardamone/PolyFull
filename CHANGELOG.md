@@ -1,3 +1,7 @@
+## [0.2.7](https://github.com/GiovanniCardamone/polyfull/compare/v0.2.6...v0.2.7) (2021-08-04)
+
+
+
 ## [0.2.6](https://github.com/GiovanniCardamone/polyfull/compare/v0.2.5...v0.2.6) (2021-08-04)
 
 

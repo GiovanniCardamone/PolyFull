@@ -6,9 +6,10 @@
 [![NPM version](https://img.shields.io/npm/v/polyfull.svg?style=plastic)](https://www.npmjs.com/package/polyfull)
 [![NPM downloads](https://img.shields.io/npm/dm/polyfull.svg?style=plastic)](https://www.npmjs.com/package/polyfull)
 
+> :warning: THIS IS INTENDED TO USE ONLY IN FINAL APPLICATIONS.  
+> DO NOT USE in other libraries, or final applications will be also injected.
 
 supercharge javascript with missing functions
-
 ## Documentation
 
 [Documentation](https://giovannicardam.one/polyfull)
@@ -38,6 +39,18 @@ console.log(myArray)
 
 // [1, 3]
 ```
+
+### Array
+
+| method name         | description |
+| ------------------- | ----------- |
+| Array.first         |
+| Array.last          |
+| Array.insert        |
+| Array.remove        |
+| Array.removeIndex   |
+| Array.includesEvery |
+| Array.includesAny   |
 
 ## License
 

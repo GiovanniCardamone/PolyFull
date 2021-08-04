@@ -9,13 +9,13 @@
     "extends": "@giovannicardamone/eslint-config"
   },
   "scripts": {
-    "test": "echo \"Skip: no test specified\" && exit 0",
+    "test": "nyc ts-mocha 'tests/**.test.ts'",
     "lint": "eslint",
     "build": "tsc",
     "build:watch": "tsc --watch",
     "docs": "docsify generate docs",
     "docs:watch": "docsify serve docs",
-    "prepublishOnly": "npm run lint && npm run build"
+    "prepublishOnly": "npm run lint && npm test && npm run build"
   },
   "repository": {
     "type": "git",
@@ -34,12 +34,18 @@
   "devDependencies": {
     "@giovannicardamone/eslint-config": "^0.0.1",
     "@giovannicardamone/prettier-config": "^0.0.2",
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^9.0.0",
     "@types/node": "^16.4.8",
     "@typescript-eslint/eslint-plugin": "^4.28.5",
     "@typescript-eslint/parser": "^4.28.5",
+    "chai": "^4.3.4",
     "docsify": "^4.12.1",
     "eslint": "^7.32.0",
     "husky": "^7.0.1",
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0",
+    "ts-mocha": "^8.0.0",
     "typescript": "^4.3.5"
   }
 }

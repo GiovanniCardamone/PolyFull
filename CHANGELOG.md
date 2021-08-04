@@ -1,3 +1,13 @@
+## [0.2.4](https://github.com/GiovanniCardamone/polyfull/compare/v0.2.3...v0.2.4) (2021-08-04)
+
+
+### Bug Fixes
+
+* fixed .npmignore ([7d2d3fb](https://github.com/GiovanniCardamone/polyfull/commit/7d2d3fb969a4cb055842e048f928311f9afa89dc))
+* fixed .tsconfig.json ([2689150](https://github.com/GiovanniCardamone/polyfull/commit/26891501d94045dd55a1e6be07f18cfab6d70c66))
+
+
+
 ## [0.2.3](https://github.com/GiovanniCardamone/polyfull/compare/v0.2.2...v0.2.3) (2021-08-01)
 
 

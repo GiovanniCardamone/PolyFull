@@ -2,6 +2,10 @@
 
 supercharge javascript with missing functions
 
+## Documentation
+
+[Documentation](https://giovannicardam.one/polyfull)
+
 ## Installation
 
 ```bash
@@ -27,10 +31,6 @@ console.log(myArray)
 
 // [1, 3]
 ```
-
-## Documentation
-
-[Documentation](https://giovannicardam.one/polyfull)
 
 ## License
 

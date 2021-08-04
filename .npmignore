@@ -1,5 +1,13 @@
-src
 .editorconfig
+.github
 .gitignore
+.husky
+.nyc_output
+.nycrc
 .prettierignore
+.vscode
+coverage
+docs
+src
+tests
 tsconfig.json

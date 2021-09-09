@@ -1,3 +1,7 @@
+## [0.3.10](https://github.com/GiovanniCardamone/polyfull/compare/v0.3.9...v0.3.10) (2021-09-09)
+
+
+
 ## [0.3.9](https://github.com/GiovanniCardamone/polyfull/compare/v0.3.8...v0.3.9) (2021-09-09)
 
 
@@ -31,15 +35,6 @@
 
 
 ## [0.3.1](https://github.com/GiovanniCardamone/polyfull/compare/v0.3.0...v0.3.1) (2021-09-09)
-
-
-
-# [0.3.0](https://github.com/GiovanniCardamone/polyfull/compare/v0.2.8...v0.3.0) (2021-09-09)
-
-
-### Features
-
-* upgrade lib ([a684f36](https://github.com/GiovanniCardamone/polyfull/commit/a684f36f616360e457b718fd62ebb120206b7c5f))
 
 
 

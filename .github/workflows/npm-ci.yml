@@ -6,7 +6,6 @@ on:
       - main
 
 jobs:
-
   # build / test
   Build:
     name: Build Package
@@ -27,7 +26,7 @@ jobs:
       - run: npm run build
 
       # Run Tests
-      - run: npm test
+      - run: npm run cover
 
       # Report Coverage
       - name: Coveralls GitHub Action
@@ -74,5 +73,3 @@ jobs:
         uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
-
-

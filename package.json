@@ -17,6 +17,9 @@
     "docs:watch": "docsify serve docs",
     "prepublishOnly": "npm run lint && npm test && npm run build"
   },
+  "files": [
+    "dist/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GiovanniCardamone/polyfull.git"

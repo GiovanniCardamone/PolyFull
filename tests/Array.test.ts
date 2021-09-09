@@ -2,11 +2,9 @@ import { expect } from 'chai'
 import '../src/Array'
 
 describe('Array', () => {
-
 	describe('first', () => {
-
 		it('should return first element', (done) => {
-			const array = [1,2,3]
+			const array = [1, 2, 3]
 
 			expect(array.first()).to.be.equal(1)
 
@@ -22,7 +20,7 @@ describe('Array', () => {
 		})
 
 		it('should return offseted element when offset', (done) => {
-			const array = [1,2,3]
+			const array = [1, 2, 3]
 
 			expect(array.first(1)).to.be.equal(2)
 
@@ -30,19 +28,17 @@ describe('Array', () => {
 		})
 
 		it('should return undefined when offsetted out of bound', (done) => {
-			const array = [1,2,3]
+			const array = [1, 2, 3]
 
 			expect(array.first(3)).to.be.equal(undefined)
 
 			done()
 		})
-
 	})
 
 	describe('last', () => {
-
 		it('should return last element', (done) => {
-			const array = [1,2,3]
+			const array = [1, 2, 3]
 
 			expect(array.last()).to.be.equal(3)
 
@@ -58,7 +54,7 @@ describe('Array', () => {
 		})
 
 		it('should return offseted element when offset', (done) => {
-			const array = [1,2,3]
+			const array = [1, 2, 3]
 
 			expect(array.last(-1)).to.be.equal(2)
 
@@ -66,13 +62,12 @@ describe('Array', () => {
 		})
 
 		it('should return undefined when offsetted out of bound', (done) => {
-			const array = [1,2,3]
+			const array = [1, 2, 3]
 
 			expect(array.last(3)).to.be.equal(undefined)
 
 			done()
 		})
-
 	})
 
 	describe('insert', () => {})

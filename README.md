@@ -1,18 +1,27 @@
 # polyfull
 
+![Logo](banner.png)
+
+<center>
+
+![JavaScript](https://img.shields.io/badge/ES6-Supported-yellow.svg?style=for-the-badge&logo=JavaScript) ![TypeScript](https://img.shields.io/badge/TypeScript-Supported-blue.svg?style=for-the-badge&logo=Typescript)
+
 [![CI](https://github.com/GiovanniCardamone/polyfull/actions/workflows/npm-ci.yml/badge.svg)](https://github.com/GiovanniCardamone/polyfull/actions/workflows/npm-ci.yml)
 [![Coverage Status](https://coveralls.io/repos/github/GiovanniCardamone/polyfull/badge.svg?branch=main)](https://coveralls.io/github/GiovanniCardamone/polyfull?branch=main)
 [![Known Vulnerabilities](https://snyk.io/test/github/GiovanniCardamone/polyfull/badge.svg)](https://snyk.io/test/github/GiovanniCardamone/polyfull)
 [![NPM version](https://img.shields.io/npm/v/polyfull.svg?style=plastic)](https://www.npmjs.com/package/polyfull)
 [![NPM downloads](https://img.shields.io/npm/dm/polyfull.svg?style=plastic)](https://www.npmjs.com/package/polyfull)
 
+</center>
+
 > :warning: THIS IS INTENDED TO USE ONLY IN FINAL APPLICATIONS.  
-> DO NOT USE in other libraries, or final applications will be also injected.
+> if you use this in library, any other applications will have this injected as well
 
-supercharge javascript with missing functions
-## Documentation
+Polyfull is a library intended for augment javascript capability, somehow javascript
+is still missing some of basic functionality that are usually provided throught other functions.
 
-[Documentation](https://giovannicardam.one/polyfull)
+Polyfull aim to solve this problem injecting into the core component of the language the functionality
+that are missing.
 
 ## Installation
 
@@ -22,35 +31,47 @@ supercharge javascript with missing functions
 
 ## Usage
 
-in the index of your project import `polyfull` to have access to any of the functions
+simply import `polyfull` to have access to supercharged functionality.
 
 ```javascript
 import 'polyfull'
 ```
 
-than use in any other files
+## Examples
+
+Some of functions that you might need to use.
 
 ```javascript
-const myArray = [1, 2, 3]
+import 'polyfull'
 
-myArray.remove(2)
+// Array
+[1, 2, 3].remove(2) // => [1, 3]
+[1, 2, 3].removeIndex(2) // => [1, 2]
+[1, 2, 3].first() // 1
+[1, 2, 3].last() // 3
 
-console.log(myArray)
+// Date
+new Date(0).addHours(1) // => 1970-01-01T01:00:00.000Z
 
-// [1, 3]
+// Number
+7.0.isPrime() // => true
+
+// Promise
+Promise.allProperties({
+  a: Promise.resolve(true)
+  b: Promise.reject(false)
+}) // => 
+
+// String
+"hello".reverse() // => "olleh"
+"racecar".isPalindrome() // => true
+
+// And Many Many Others!!
 ```
 
-### Array
+## Documentation
 
-| method name         | description |
-| ------------------- | ----------- |
-| Array.first         |
-| Array.last          |
-| Array.insert        |
-| Array.remove        |
-| Array.removeIndex   |
-| Array.includesEvery |
-| Array.includesAny   |
+[Documentation](https://giovannicardam.one/polyfull)
 
 ## License
 

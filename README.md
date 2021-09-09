@@ -1,6 +1,6 @@
-# polyfull
+# PolyFull
 
-![Logo](banner.png)
+![Logo](assets/banner.png)
 
 <div align="center">
 
@@ -23,13 +23,13 @@ is still missing some of basic functionality that are usually provided throught 
 Polyfull aim to solve this problem injecting into the core component of the language the functionality
 that are missing.
 
-## Installation
+## :package: Installation
 
 ```bash
 npm install polyfull
 ```
 
-## Usage
+## :rocket: Usage
 
 simply import `polyfull` to have access to supercharged functionality.
 
@@ -37,7 +37,7 @@ simply import `polyfull` to have access to supercharged functionality.
 import 'polyfull'
 ```
 
-## Examples
+## :chart_with_upwards_trend: Examples
 
 Some of functions that you might need to use.
 
@@ -69,10 +69,10 @@ Promise.allProperties({
 // And Many Many Others!!
 ```
 
-## Documentation
+## :books: Documentation
 
-[Documentation](https://giovannicardam.one/polyfull)
+[Full Documentation](https://giovannicardam.one/polyfull)
 
-## License
+## :label: License
 
 [MIT](https://github.com/GiovanniCardamone/polyfull/blob/main/LICENSE)

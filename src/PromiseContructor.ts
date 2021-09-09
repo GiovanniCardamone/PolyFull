@@ -7,7 +7,7 @@ type PromisesMap<T extends PlainObj> = {
 
 declare interface PromiseConstructor {
 	allProperties<T extends PlainObj>(promisesMap: PromisesMap<T>): Promise<T>
-	allPropertiesSettled<T extends PlainObj>(promisesMap: PromisesMap<T>): Promise<Partial<T>>
+	// allPropertiesSettled<T extends PlainObj>(promisesMap: PromisesMap<T>): Promise<Partial<T>>
 }
 
 
@@ -29,23 +29,23 @@ Promise.allProperties = async function<T extends PlainObj>(promisesMap: Promises
 	})
 }
 
-Promise.allPropertiesSettled = async function<T extends PlainObj>(promisesMap: PromisesMap<T>) {
-	if (promisesMap === null || typeof promisesMap !== 'object' || Array.isArray(promisesMap)) {
-		return Promise.reject(new TypeError('The input argument must be a plain object'))
-	}
+// Promise.allPropertiesSettled = async function<T extends PlainObj>(promisesMap: PromisesMap<T>) {
+// 	if (promisesMap === null || typeof promisesMap !== 'object' || Array.isArray(promisesMap)) {
+// 		return Promise.reject(new TypeError('The input argument must be a plain object'))
+// 	}
 
-	const keys = Object.keys(promisesMap)
-	const promises = keys.map((key) => {
-		return promisesMap[key]
-	})
+// 	const keys = Object.keys(promisesMap)
+// 	const promises = keys.map((key) => {
+// 		return promisesMap[key]
+// 	})
 
-	return Promise.allSettled(promises).then(results => {
-		return results.reduce((settled, result, index) => {
-			if (result.status === 'fulfilled') {
-				settled[keys[index]] = result.value
-			}
+// 	return Promise.allSettled(promises).then(results => {
+// 		return results.reduce((settled, result, index) => {
+// 			if (result.status === 'fulfilled') {
+// 				settled[keys[index]] = result.value
+// 			}
 
-			return settled
-		}, {} as any)
-	})
-}
+// 			return settled
+// 		}, {} as any)
+// 	})
+// }

@@ -1,7 +1,10 @@
 
 declare interface Array<T> {
 	/**
-	 * returns first element of array
+	 *
+	 * get first element
+	 *
+	 * @param offset skip elements
 	 */
 	first(offset?: number): T | undefined
 

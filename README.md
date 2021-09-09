@@ -2,7 +2,7 @@
 
 ![Logo](banner.png)
 
-<center>
+<div align="center">
 
 ![JavaScript](https://img.shields.io/badge/ES6-Supported-yellow.svg?style=for-the-badge&logo=JavaScript) ![TypeScript](https://img.shields.io/badge/TypeScript-Supported-blue.svg?style=for-the-badge&logo=Typescript)
 
@@ -12,7 +12,7 @@
 [![NPM version](https://img.shields.io/npm/v/polyfull.svg?style=plastic)](https://www.npmjs.com/package/polyfull)
 [![NPM downloads](https://img.shields.io/npm/dm/polyfull.svg?style=plastic)](https://www.npmjs.com/package/polyfull)
 
-</center>
+</div>
 
 > :warning: THIS IS INTENDED TO USE ONLY IN FINAL APPLICATIONS.  
 > if you use this in library, any other applications will have this injected as well

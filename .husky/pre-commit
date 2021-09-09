@@ -3,6 +3,6 @@
 
 npm run lint
 npm run build
-npm run test
+npm run cover
 npm run docs
 git add docs

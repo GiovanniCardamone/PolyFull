@@ -1,11 +1,17 @@
 {
   "cache": false,
-  "extension": [".ts"],
+  "extension": [
+    ".ts"
+  ],
   "check-coverage": true,
-  "include": ["src/**"],
+  "include": [
+    "src/**"
+  ],
   "statements": 0,
   "branches": 0,
   "functions": 0,
   "lines": 0,
-	"reporter": ["lcovonly"]
+  "reporter": [
+    "lcovonly"
+  ]
 }

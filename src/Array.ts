@@ -1,5 +1,3 @@
-
-
 declare interface ArrayConstructor {
 	isNotArray(arg: any): boolean
 }
@@ -44,7 +42,11 @@ declare interface Array<T> {
 	includesAny(other: Array<T>): boolean
 }
 
-Array.prototype.first = function(offset = 0) {
+Array.isNotArray = function (args: any) {
+	return !Array.isArray(args)
+}
+
+Array.prototype.first = function (offset = 0) {
 	return this[0 + offset]
 }
 
@@ -52,7 +54,11 @@ Array.prototype.last = function (offset = 0) {
 	return this[this.length - 1 + offset]
 }
 
-Array.prototype.insert = function <T>(this: Array<T>, index: number, element: T) {
+Array.prototype.insert = function <T>(
+	this: Array<T>,
+	index: number,
+	element: T
+) {
 	this.splice(index, 0, element)
 }
 
@@ -79,9 +85,9 @@ Array.prototype.includesAny = function <T>(this: Array<T>, other: Array<T>) {
 	return false
 }
 
-Array.prototype.includesEvery = function<T>(this: Array<T>, other: Array<T>) {
-		for (const e of this) {
-		if (other.includes(e) === false) {
+Array.prototype.includesEvery = function <T>(this: Array<T>, other: Array<T>) {
+	for (const e of other) {
+		if (this.includes(e) === false) {
 			return false
 		}
 	}

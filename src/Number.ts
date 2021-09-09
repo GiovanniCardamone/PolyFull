@@ -35,8 +35,6 @@ declare interface Number {
 	log10(): number
 	log1p(): number
 	log2(): number
-	max(n: number): number
-	min(n: number): number
 	pow(n: number): number
 	round(): number
 	sign(): number
@@ -150,7 +148,7 @@ Number.prototype.pow = function (n: number): number {
 	return Math.pow(this as number, n)
 }
 
-Number.prototype.round = function(): number {
+Number.prototype.round = function (): number {
 	return Math.round(this as number)
 }
 
@@ -183,8 +181,12 @@ Number.prototype.trunc = function (): number {
 }
 
 Number.prototype.isPrime = function (): boolean {
+	if ((this as number) < 2) {
+		return false
+	}
+
 	for (let i = 2; i < (this as number); i++) {
-		if (this as number % i === 0) {
+		if ((this as number) % i === 0) {
 			return false
 		}
 	}
@@ -193,7 +195,7 @@ Number.prototype.isPrime = function (): boolean {
 }
 
 Number.prototype.isDivisibleBy = function (n: number): boolean {
-	return this as number % n === 0
+	return (this as number) % n === 0
 }
 
 Number.prototype.isEven = function (): boolean {

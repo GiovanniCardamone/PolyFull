@@ -3,42 +3,80 @@ import { expect } from 'chai'
 import '../src/Number'
 
 describe('Number', () => {
-	describe('abs', () => {
-		it('should be 2 equals 2', (done) => {
-			expect((2.0).abs()).to.equal(2)
-			done()
-		})
-
-		it('should be -2 equals 2', (done) => {
-			expect((-2.0).abs()).to.equal(2)
-			done()
+	// methods without parameter
+	;[
+		'abs',
+		'acos',
+		'acosh',
+		'asin',
+		'asinh',
+		'atan',
+		'atanh',
+		'cbrt',
+		'ceil',
+		'clz32',
+		'cos',
+		'cosh',
+		'exp',
+		'expm1',
+		'floor',
+		'fround',
+		'log',
+		'log10',
+		'log1p',
+		'log2',
+		'round',
+		'sign',
+		'sin',
+		'sinh',
+		'sqrt',
+		'tan',
+		'tanh',
+		'trunc',
+	].forEach((method) => {
+		describe(method, () => {
+			it(`should be equal to Math.${method}`, (done) => {
+				expect((1)[method]()).to.equal(Math[method](1))
+				done()
+			})
 		})
 	})
 
-	describe('pow', () => {
-		it('should be 2^3 equals 8', (done) => {
-			expect((2.0).pow(3)).to.equal(8)
-			done()
+	// method with one parameter
+	;['atan2', 'hypot', 'imul', 'pow'].forEach((method) => {
+		describe(method, () => {
+			it(`should be equal to Math.${method}`, (done) => {
+				expect((1)[method](2)).to.equal(Math[method](1, 2))
+				done()
+			})
 		})
 	})
 
-	describe('sqrt', () => {
-		it('should be 9 equals 3', (done) => {
-			expect((9.0).sqrt()).to.equal(3)
+	//
+
+	describe('isPrime', () => {
+		it('should be 0 not prime', (done) => {
+			expect((0.0).isPrime()).to.be.equal(false)
 			done()
 		})
-	})
 
-	describe('log', () => {
-		it('should be Math.E equals 1', (done) => {
-			expect(Math.E.log()).to.equal(1)
+		it('should be 1 not prime', (done) => {
+			expect((1.0).isPrime()).to.be.equal(false)
 			done()
 		})
-	})
 
-	describe('exp', () => {
-		it('should be 0 equals 1', (done) => {
-			expect((0.0).exp()).to.equal(1)
+		it('should be 2 prime', (done) => {
+			expect((2.0).isPrime()).to.be.equal(true)
+			done()
+		})
+
+		it('should be 4 not prime', (done) => {
+			expect((4.0).isPrime()).to.be.equal(false)
+			done()
+		})
+
+		it('should be 19 prime', (done) => {
+			expect((19.0).isPrime()).to.be.equal(true)
 			done()
 		})
 	})

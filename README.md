@@ -1,6 +1,6 @@
 # PolyFull
 
-![Logo](assets/images/banner.png)
+![Logo](media/images/banner.png)
 
 <div align="center">
 

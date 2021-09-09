@@ -5,4 +5,5 @@ npm run lint
 npm run build
 npm run test
 npm run docs
+rsync assets/* docs/assets
 git add docs

@@ -26,7 +26,7 @@ that are missing.
 ## Installation
 
 ```bash
-  npm install polyfull
+npm install polyfull
 ```
 
 ## Usage

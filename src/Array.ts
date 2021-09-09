@@ -1,4 +1,9 @@
 
+
+declare interface ArrayConstructor {
+	isNotArray(arg: any): boolean
+}
+
 declare interface Array<T> {
 	/**
 	 *
@@ -75,7 +80,7 @@ Array.prototype.includesAny = function <T>(this: Array<T>, other: Array<T>) {
 }
 
 Array.prototype.includesEvery = function<T>(this: Array<T>, other: Array<T>) {
-	for (const e of this) {
+		for (const e of this) {
 		if (other.includes(e) === false) {
 			return false
 		}

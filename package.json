@@ -13,8 +13,7 @@
     "lint": "eslint",
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "docs": "docsify generate docs",
-    "docs:watch": "docsify serve docs",
+    "docs": "typedoc",
     "prepublishOnly": "npm run lint && npm test && npm run build"
   },
   "files": [
@@ -35,7 +34,7 @@
   },
   "homepage": "https://github.com/GiovanniCardamone/polyfull#readme",
   "devDependencies": {
-    "@giovannicardamone/eslint-config": "^0.0.1",
+    "@giovannicardamone/eslint-config": "^0.5.0",
     "@giovannicardamone/prettier-config": "^0.0.2",
     "@types/chai": "^4.2.21",
     "@types/mocha": "^9.0.0",
@@ -43,7 +42,6 @@
     "@typescript-eslint/eslint-plugin": "^4.28.5",
     "@typescript-eslint/parser": "^4.28.5",
     "chai": "^4.3.4",
-    "docsify": "^4.12.1",
     "eslint": "^7.32.0",
     "husky": "^7.0.1",
     "mocha": "^8.4.0",

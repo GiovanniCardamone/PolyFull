@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>polyfull | polyfull</title>
+	<title>ArrayConstructor | polyfull</title>
 	<meta name="description" content="Documentation for polyfull">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">:root {
@@ -2674,7 +2674,7 @@ img {
 		<div class="container">
 			<div class="table-wrap">
 				<div class="table-cell">
-					<strong><a href="index.html">polyfull</a></strong>
+					<strong><a href="../index.html">polyfull</a></strong>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -2704,96 +2704,514 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
+		<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-external">
+			<a href="Array.Array-1.html" class="tsd-kind-icon">Array</a>
+		</li>
+		<li class="current tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-external">
+			<a href="Array.ArrayConstructor.html" class="tsd-kind-icon">Array<wbr>Constructor</a>
+			<ul>
+				<li class=" tsd-kind-constructor tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external">
+					<a href="Array.ArrayConstructor.html#constructor" class="tsd-kind-icon">constructor</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a href="Array.ArrayConstructor.html#_species_" class="tsd-kind-icon">[species]</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a href="Array.ArrayConstructor.html#prototype" class="tsd-kind-icon">prototype</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external">
+					<a href="Array.ArrayConstructor.html#from" class="tsd-kind-icon">from</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a href="Array.ArrayConstructor.html#isArray" class="tsd-kind-icon">is<wbr>Array</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a href="Array.ArrayConstructor.html#isNotArray" class="tsd-kind-icon">is<wbr>Not<wbr>Array</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external">
+					<a href="Array.ArrayConstructor.html#of" class="tsd-kind-icon">of</a>
+				</li>
+			</ul>
+		</li>
+		<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-external">
+			<a href="../modules/Array.html#Array-2" class="tsd-kind-icon">Array</a>
+		</li>
 	</ul>
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
-		<div class="tsd-panel tsd-typography">
-			<a href="#polyfull" id="polyfull" style="color: inherit; text-decoration: none;">
-				<h1>PolyFull</h1>
-			</a>
-			<p><img src="assets/banner.png" alt="Logo"></p>
-			<div align="center">
-				<p><img src="https://img.shields.io/badge/ES6-Supported-yellow.svg?style=for-the-badge&logo=JavaScript" alt="JavaScript"> <img src="https://img.shields.io/badge/TypeScript-Supported-blue.svg?style=for-the-badge&logo=Typescript" alt="TypeScript"></p>
-				<p><a href="https://github.com/GiovanniCardamone/polyfull/actions/workflows/npm-ci.yml"><img src="https://github.com/GiovanniCardamone/polyfull/actions/workflows/npm-ci.yml/badge.svg" alt="CI"></a>
-					<a href="https://coveralls.io/github/GiovanniCardamone/polyfull?branch=main"><img src="https://coveralls.io/repos/github/GiovanniCardamone/polyfull/badge.svg?branch=main" alt="Coverage Status"></a>
-					<a href="https://snyk.io/test/github/GiovanniCardamone/polyfull"><img src="https://snyk.io/test/github/GiovanniCardamone/polyfull/badge.svg" alt="Known Vulnerabilities"></a>
-					<a href="https://www.npmjs.com/package/polyfull"><img src="https://img.shields.io/npm/v/polyfull.svg?style=plastic" alt="NPM version"></a>
-				<a href="https://www.npmjs.com/package/polyfull"><img src="https://img.shields.io/npm/dm/polyfull.svg?style=plastic" alt="NPM downloads"></a></p>
-			</div>
-			<blockquote>
-				<p>:warning: THIS IS INTENDED TO USE ONLY IN FINAL APPLICATIONS.<br>if you use this in library, any other applications will have this injected as well</p>
-			</blockquote>
-			<p>Polyfull is a library intended for augment javascript capability, somehow javascript
-			is still missing some of basic functionality that are usually provided throught other functions.</p>
-			<p>Polyfull aim to solve this problem injecting into the core component of the language the functionality
-			that are missing.</p>
-			<a href="#package-installation" id="package-installation" style="color: inherit; text-decoration: none;">
-				<h2>:package: Installation</h2>
-			</a>
-			<pre><code class="language-bash"><span style="color: #000000">npm install polyfull</span>
-</code></pre>
-			<a href="#rocket-usage" id="rocket-usage" style="color: inherit; text-decoration: none;">
-				<h2>:rocket: Usage</h2>
-			</a>
-			<p>simply import <code>polyfull</code> to have access to supercharged functionality.</p>
-			<pre><code class="language-javascript"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;polyfull&#039;</span>
-</code></pre>
-			<a href="#chart_with_upwards_trend-examples" id="chart_with_upwards_trend-examples" style="color: inherit; text-decoration: none;">
-				<h2>:chart_with_upwards_trend: Examples</h2>
-			</a>
-			<p>Some of functions that you might need to use.</p>
-			<pre><code class="language-javascript"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;polyfull&#039;</span>
-
-<span style="color: #008000">// Array</span>
-<span style="color: #000000">[</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">].</span><span style="color: #795E26">remove</span><span style="color: #000000">(</span><span style="color: #098658">2</span><span style="color: #000000">) </span><span style="color: #008000">// =&gt; [1, 3]</span>
-<span style="color: #000000">[</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">].</span><span style="color: #795E26">removeIndex</span><span style="color: #000000">(</span><span style="color: #098658">2</span><span style="color: #000000">) </span><span style="color: #008000">// =&gt; [1, 2]</span>
-<span style="color: #000000">[</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">].</span><span style="color: #795E26">first</span><span style="color: #000000">() </span><span style="color: #008000">// =&gt; 1</span>
-<span style="color: #000000">[</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">].</span><span style="color: #795E26">last</span><span style="color: #000000">() </span><span style="color: #008000">// =&gt; 3</span>
-
-<span style="color: #008000">// Date</span>
-<span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">(</span><span style="color: #098658">0</span><span style="color: #000000">).</span><span style="color: #795E26">addHours</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">) </span><span style="color: #008000">// =&gt; 1970-01-01T01:00:00.000Z</span>
-
-<span style="color: #008000">// Number</span>
-<span style="color: #098658">7.0</span><span style="color: #000000">.</span><span style="color: #795E26">isPrime</span><span style="color: #000000">() </span><span style="color: #008000">// =&gt; true</span>
-
-<span style="color: #008000">// Promise</span>
-<span style="color: #267F99">Promise</span><span style="color: #000000">.</span><span style="color: #795E26">allProperties</span><span style="color: #000000">({</span>
-<span style="color: #000000">  </span><span style="color: #001080">a:</span><span style="color: #000000"> </span><span style="color: #267F99">Promise</span><span style="color: #000000">.</span><span style="color: #795E26">resolve</span><span style="color: #000000">(</span><span style="color: #0000FF">true</span><span style="color: #000000">)</span>
-<span style="color: #000000">  </span><span style="color: #001080">b</span><span style="color: #000000">: </span><span style="color: #267F99">Promise</span><span style="color: #000000">.</span><span style="color: #795E26">reject</span><span style="color: #000000">(</span><span style="color: #0000FF">false</span><span style="color: #000000">)</span>
-<span style="color: #000000">}) </span><span style="color: #008000">// =&gt; </span>
-
-<span style="color: #008000">// String</span>
-<span style="color: #A31515">&quot;hello&quot;</span><span style="color: #000000">.</span><span style="color: #795E26">reverse</span><span style="color: #000000">() </span><span style="color: #008000">// =&gt; &quot;olleh&quot;</span>
-<span style="color: #A31515">&quot;racecar&quot;</span><span style="color: #000000">.</span><span style="color: #795E26">isPalindrome</span><span style="color: #000000">() </span><span style="color: #008000">// =&gt; true</span>
-
-<span style="color: #008000">// And Many Many Others!!</span>
-</code></pre>
-			<a href="#books-documentation" id="books-documentation" style="color: inherit; text-decoration: none;">
-				<h2>:books: Documentation</h2>
-			</a>
-			<p><a href="https://giovannicardam.one/polyfull">Full Documentation</a></p>
-			<a href="#label-license" id="label-license" style="color: inherit; text-decoration: none;">
-				<h2>:label: License</h2>
-			</a>
-			<p><a href="https://github.com/GiovanniCardamone/polyfull/blob/main/LICENSE">MIT</a></p>
-		</div>
-		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
+		<section class="tsd-panel tsd-hierarchy">
+			<h3>Hierarchy</h3>
+			<ul class="tsd-hierarchy">
+				<li>
+					<span class="target">ArrayConstructor</span>
+				</li>
+			</ul>
+		</section>
+		<section class="tsd-panel">
+			<h3 class="tsd-before-signature">Callable</h3>
+			<ul class="tsd-signatures tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-external">
+				<li class="tsd-signature tsd-kind-icon">Array<wbr>Constructor<span class="tsd-signature-symbol">(</span>arrayLength<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
+				<li class="tsd-signature tsd-kind-icon">Array<wbr>Constructor&lt;T&gt;<span class="tsd-signature-symbol">(</span>arrayLength<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
+				<li class="tsd-signature tsd-kind-icon">Array<wbr>Constructor&lt;T&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
+			</ul>
+			<ul class="tsd-descriptions">
+				<li class="tsd-description">
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:1408</li>
+						</ul>
+					</aside>
+					<h4 class="tsd-parameters-title">Parameters</h4>
+					<ul class="tsd-parameters">
+						<li>
+							<h5><span class="tsd-flag ts-flagOptional">Optional</span> arrayLength: <span class="tsd-signature-type">number</span></h5>
+						</li>
+					</ul>
+					<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
+				</li>
+				<li class="tsd-description">
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:1409</li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T</h4>
+						</li>
+					</ul>
+					<h4 class="tsd-parameters-title">Parameters</h4>
+					<ul class="tsd-parameters">
+						<li>
+							<h5>arrayLength: <span class="tsd-signature-type">number</span></h5>
+						</li>
+					</ul>
+					<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
+				</li>
+				<li class="tsd-description">
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:1410</li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T</h4>
+						</li>
+					</ul>
+					<h4 class="tsd-parameters-title">Parameters</h4>
+					<ul class="tsd-parameters">
+						<li>
+							<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>items: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+						</li>
+					</ul>
+					<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
+				</li>
+			</ul>
+		</section>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
-					<section class="tsd-index-section ">
-						<h3>Modules</h3>
+					<section class="tsd-index-section tsd-is-external">
+						<h3>Constructors</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-module"><a href="modules/Array.html" class="tsd-kind-icon">Array</a></li>
-							<li class="tsd-kind-module"><a href="modules/Date.html" class="tsd-kind-icon">Date</a></li>
-							<li class="tsd-kind-module"><a href="modules/Number.html" class="tsd-kind-icon">Number</a></li>
-							<li class="tsd-kind-module"><a href="modules/Promise.html" class="tsd-kind-icon">Promise</a></li>
-							<li class="tsd-kind-module"><a href="modules/String.html" class="tsd-kind-icon">String</a></li>
+							<li class="tsd-kind-constructor tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external"><a href="Array.ArrayConstructor.html#constructor" class="tsd-kind-icon">constructor</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section tsd-is-external">
+						<h3>Properties</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="Array.ArrayConstructor.html#_species_" class="tsd-kind-icon">[species]</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="Array.ArrayConstructor.html#prototype" class="tsd-kind-icon">prototype</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section tsd-is-external">
+						<h3>Methods</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external"><a href="Array.ArrayConstructor.html#from" class="tsd-kind-icon">from</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="Array.ArrayConstructor.html#isArray" class="tsd-kind-icon">is<wbr>Array</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="Array.ArrayConstructor.html#isNotArray" class="tsd-kind-icon">is<wbr>Not<wbr>Array</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external"><a href="Array.ArrayConstructor.html#of" class="tsd-kind-icon">of</a></li>
 						</ul>
 					</section>
 				</div>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group tsd-is-external">
+			<h2>Constructors</h2>
+			<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external">
+				<a name="constructor" class="tsd-anchor"></a>
+				<h3>constructor</h3>
+				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">new <wbr>Array<wbr>Constructor<span class="tsd-signature-symbol">(</span>arrayLength<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
+					<li class="tsd-signature tsd-kind-icon">new <wbr>Array<wbr>Constructor&lt;T&gt;<span class="tsd-signature-symbol">(</span>arrayLength<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
+					<li class="tsd-signature tsd-kind-icon">new <wbr>Array<wbr>Constructor&lt;T&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:1405</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> arrayLength: <span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:1406</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>T</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>arrayLength: <span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:1407</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>T</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>items: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
+					</li>
+				</ul>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group tsd-is-external">
+			<h2>Properties</h2>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+				<a name="_species_" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> [species]</h3>
+				<div class="tsd-signature tsd-kind-icon">[species]<span class="tsd-signature-symbol">:</span> <a href="Array.ArrayConstructor.html" class="tsd-signature-type" data-tsd-kind="Interface">ArrayConstructor</a></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:314</li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+				<a name="prototype" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> prototype</h3>
+				<div class="tsd-signature tsd-kind-icon">prototype<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:1412</li>
+					</ul>
+				</aside>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group tsd-is-external">
+			<h2>Methods</h2>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external">
+				<a name="from" class="tsd-anchor"></a>
+				<h3>from</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">from&lt;T&gt;<span class="tsd-signature-symbol">(</span>arrayLike<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
+					<li class="tsd-signature tsd-kind-icon">from&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>arrayLike<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, mapfn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, k<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">U</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span></li>
+					<li class="tsd-signature tsd-kind-icon">from&lt;T&gt;<span class="tsd-signature-symbol">(</span>iterable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
+					<li class="tsd-signature tsd-kind-icon">from&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>iterable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, mapfn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, k<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">U</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:72</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Creates an array from an array-like object.</p>
+							</div>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>T</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>arrayLike: <span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>An array-like object to convert to an array.</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:80</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Creates an array from an iterable object.</p>
+							</div>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>T</h4>
+							</li>
+							<li>
+								<h4>U</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>arrayLike: <span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>An array-like object to convert to an array.</p>
+								</div>
+							</li>
+							<li>
+								<h5>mapfn: <span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, k<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">U</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>A mapping function to call on every element of the array.</p>
+								</div>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, k<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>v: <span class="tsd-signature-type">T</span></h5>
+													</li>
+													<li>
+														<h5>k: <span class="tsd-signature-type">number</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">U</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Value of &#39;this&#39; used to invoke the mapfn.</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in node_modules/typescript/lib/lib.es2015.iterable.d.ts:83</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Creates an array from an iterable object.</p>
+							</div>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>T</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>iterable: <span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>An iterable object to convert to an array.</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in node_modules/typescript/lib/lib.es2015.iterable.d.ts:91</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Creates an array from an iterable object.</p>
+							</div>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>T</h4>
+							</li>
+							<li>
+								<h4>U</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>iterable: <span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>An iterable object to convert to an array.</p>
+								</div>
+							</li>
+							<li>
+								<h5>mapfn: <span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, k<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">U</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>A mapping function to call on every element of the array.</p>
+								</div>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, k<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>v: <span class="tsd-signature-type">T</span></h5>
+													</li>
+													<li>
+														<h5>k: <span class="tsd-signature-type">number</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">U</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Value of &#39;this&#39; used to invoke the mapfn.</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+				<a name="isArray" class="tsd-anchor"></a>
+				<h3>is<wbr>Array</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">is<wbr>Array<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:1411</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>arg: <span class="tsd-signature-type">any</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+				<a name="isNotArray" class="tsd-anchor"></a>
+				<h3>is<wbr>Not<wbr>Array</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">is<wbr>Not<wbr>Array<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/GiovanniCardamone/polyfull/blob/12c6100/src/Array.ts#L4">src/Array.ts:4</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>arg: <span class="tsd-signature-type">any</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external">
+				<a name="of" class="tsd-anchor"></a>
+				<h3>of</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">of&lt;T&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in node_modules/typescript/lib/lib.es2015.core.d.ts:86</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns a new array from a set of elements.</p>
+							</div>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>T</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>items: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>A set of elements to include in the new array object.</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
+					</li>
+				</ul>
 			</section>
 		</section>
 		<footer class="with-border-bottom">

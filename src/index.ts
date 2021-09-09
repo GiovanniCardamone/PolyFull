@@ -1,5 +1,5 @@
 import './Array'
 import './Date'
 import './Number'
-import './PromiseContructor'
+import './Promise'
 import './String'

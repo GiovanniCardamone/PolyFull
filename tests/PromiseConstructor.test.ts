@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import '../src/PromiseContructor'
+import '../src/Promise'
 
 describe('PromiseConstructor', () => {
 	describe('allProperties', () => {})

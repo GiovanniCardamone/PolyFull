@@ -1,3 +1,16 @@
+/**
+ * @module
+ *
+ * Number
+ */
+
+/**
+ * NumberConstructor
+ */
+declare interface NumberConstructor {
+	// new(value?: any): number;
+}
+
 declare interface Number {
 	abs(): number
 	acos(): number
@@ -190,4 +203,3 @@ Number.prototype.isEven = function (): boolean {
 Number.prototype.isOdd = function (): boolean {
 	return (this as number) % 2 !== 0
 }
-

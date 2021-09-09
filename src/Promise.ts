@@ -1,5 +1,11 @@
+/**
+ * @internal
+ */
 type PlainObj = { [key: string]: unknown }
 
+/**
+ * @internal
+ */
 type PromisesMap<T extends PlainObj> = {
 	[P in keyof T]: Promise<T[P]> | T[P]
 }

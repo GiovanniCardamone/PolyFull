@@ -2,6 +2,7 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npm run lint
-npm test
+npm run build
+npm run test
 npm run docs
 git add docs

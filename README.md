@@ -85,6 +85,7 @@ await Promise.allProperties({
 | Method | Description |
 | ------ | ----------- |
 | isNotArray | check if arguments is not array |
+| zip | combine multiple array toghter by index |
 
 ### :arrow_forward:	Array
 
@@ -97,6 +98,7 @@ await Promise.allProperties({
 | removeIndex | remove element from array at specified index |
 | includesEvery | check if the other Array includes every element in Array |
 | includesAny | check if the other Array includes any element in Array |
+| chunk | split array in cunks of desired size |
 
 ### :arrow_forward:	Date
 

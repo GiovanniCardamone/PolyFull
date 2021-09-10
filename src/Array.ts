@@ -6,6 +6,13 @@ declare interface ArrayConstructor {
 	 * @returns true if not array
 	 */
 	isNotArray(arg: any): boolean
+
+	/**
+	 * combine multiple array toghter by index
+	 *
+	 * @param arrays arrays to combine
+	 */
+	zip(...arrays: Array<Array<any>>): Array<Array<any>>
 }
 
 declare interface Array<T> {
@@ -58,10 +65,37 @@ declare interface Array<T> {
 	 * @param other other array
 	 */
 	includesAny(other: Array<T>): boolean
+
+	/**
+	 * split array in cunks of desired size
+	 *
+	 * @param size
+	 */
+	chunk(size: number): Array<Array<T>>
 }
 
 Array.isNotArray = function (args: any) {
 	return !Array.isArray(args)
+}
+
+Array.zip = function (...args: Array<any>) {
+	const min = Math.min.apply(
+		null,
+		args.map((a) => a.length)
+	)
+
+	const zip: Array<any> = []
+	for (let i = 0; i < min; i++) {
+		const tmp: Array<any> = []
+
+		for (const arg of args) {
+			tmp.push(arg[i])
+		}
+
+		zip.push(tmp)
+	}
+
+	return zip
 }
 
 Array.prototype.first = function (offset = 0) {
@@ -111,4 +145,25 @@ Array.prototype.includesEvery = function <T>(this: Array<T>, other: Array<T>) {
 	}
 
 	return true
+}
+
+Array.prototype.chunk = function <T>(this: Array<T>, size: number) {
+	if (size < 1) {
+		throw new Error(`size must be > 0. got: ${size}`)
+	}
+
+	const arrays: Array<Array<T>> = []
+
+	for (let i = 0; i < this.length; ) {
+		const tmp: Array<T> = []
+		for (let j = 0; j < size && i < this.length; i++, j++) {
+			tmp.push(this[i])
+		}
+
+		arrays.push(tmp)
+	}
+
+	console.log(arrays)
+
+	return arrays
 }

@@ -15,6 +15,25 @@ describe('ArrayConstructor', () => {
 			done()
 		})
 	})
+
+	describe('zip', () => {
+		it('should combine multiple array togheter', (done) => {
+			expect(Array.zip([1, 2, 3], ['a', 'b', 'c'])).to.deep.equal([
+				[1, 'a'],
+				[2, 'b'],
+				[3, 'c'],
+			])
+			done()
+		})
+
+		it('should combine multiple to smallest', (done) => {
+			expect(Array.zip([1, 2, 3], ['a', 'b'])).to.deep.equal([
+				[1, 'a'],
+				[2, 'b'],
+			])
+			done()
+		})
+	})
 })
 
 describe('Array', () => {
@@ -188,6 +207,21 @@ describe('Array', () => {
 
 		it('should return false when no elements are included', (done) => {
 			expect([1, 2, 3].includesAny([4, 5])).to.be.equal(false)
+			done()
+		})
+	})
+
+	describe('chunk', () => {
+		it('should raise error on size < 1', (done) => {
+			expect(() => [1, 2, 3].chunk(0)).to.throw(Error)
+			expect(() => [1, 2, 3].chunk(-1)).to.throw(Error)
+			done()
+		})
+
+		it('should chunk array', (done) => {
+			expect([1, 2, 3].chunk(1)).to.deep.equal([[1], [2], [3]])
+			expect([1, 2, 3].chunk(2)).to.deep.equal([[1, 2], [3]])
+
 			done()
 		})
 	})

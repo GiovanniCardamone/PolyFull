@@ -111,6 +111,10 @@ await Promise.allProperties({
 | subDate | subtract days from Date |
 | subMonth | subtract months from Date |
 | subFullYear | subtract years from Date |
+| isBefore | check if current date is before another |
+| isAfter | check if current date is after another |
+| isSame | check if two date are the same |
+| diff | difference in ms between two dates |
 
 ### :arrow_forward:	Number
 

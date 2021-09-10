@@ -95,6 +95,34 @@ declare interface Date {
 	 * @param y years to subtract
 	 */
 	subFullYear(y: number): void
+
+	/**
+	 * check if current date is before another
+	 *
+	 * @param date date to compare
+	 */
+	isBefore(date: Date): boolean
+
+	/**
+	 * check if current date is after another
+	 *
+	 * @param date date to compare
+	 */
+	isAfter(date: Date): boolean
+
+	/**
+	 * check if two date are the same
+	 *
+	 * @param date date to campare
+	 */
+	isSame(date: Date): boolean
+
+	/**
+	 * difference in ms between two dates
+	 *
+	 * @param date date to compare
+	 */
+	diff(date: Date): number
 }
 
 Date.prototype.addMilliseconds = function (this: Date, ms: number) {
@@ -153,4 +181,20 @@ Date.prototype.subMonth = function (this: Date, m: number) {
 
 Date.prototype.subFullYear = function (this: Date, y: number) {
 	this.setFullYear(this.getFullYear() - y)
+}
+
+Date.prototype.isBefore = function (this: Date, other: Date): boolean {
+	return this.getTime() < other.getTime()
+}
+
+Date.prototype.isAfter = function (this: Date, other: Date): boolean {
+	return this.getTime() > other.getTime()
+}
+
+Date.prototype.isSame = function (this: Date, other: Date): boolean {
+	return this.getTime() === other.getTime()
+}
+
+Date.prototype.diff = function (this: Date, other: Date): number {
+	return other.getTime() - this.getTime()
 }

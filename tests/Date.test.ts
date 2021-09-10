@@ -141,4 +141,48 @@ describe('Date', () => {
 			done()
 		})
 	})
+
+	describe('isBefore', () => {
+		it('should be before', (done) => {
+			expect(new Date(0).isBefore(new Date(1))).to.be.equal(true)
+			done()
+		})
+
+		it('should not be before', (done) => {
+			expect(new Date(1).isBefore(new Date(0))).to.be.equal(false)
+			done()
+		})
+	})
+
+	describe('isAfter', () => {
+		it('should be after', (done) => {
+			expect(new Date(1).isAfter(new Date(0))).to.be.equal(true)
+			done()
+		})
+
+		it('should not be after', (done) => {
+			expect(new Date(0).isAfter(new Date(1))).to.be.equal(false)
+			done()
+		})
+	})
+
+	describe('isSame', () => {
+		it('should be the same', (done) => {
+			expect(new Date(0).isSame(new Date(0))).to.be.equal(true)
+			done()
+		})
+
+		it('should not be the same', (done) => {
+			expect(new Date(0).isSame(new Date(1))).to.be.equal(false)
+			done()
+		})
+	})
+
+	describe('diff', () => {
+		// new Date().
+		it('diff should be 1ms', (done) => {
+			expect(new Date(0).diff(new Date(1))).to.be.equal(1)
+			done()
+		})
+	})
 })

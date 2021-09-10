@@ -56,6 +56,7 @@ new Date(0).addHours(1) // => 1970-01-01T01:00:00.000Z
 // Number
 7.0.isPrime() // => true
 3.0.pow(2) // => 6
+50.0.percentage(20) // => 10
 
 // Promise
 await Promise.allProperties({

@@ -31,6 +31,8 @@ declare interface String {
 
 	/**
 	 * check if string is equal to other ignoring case
+	 *
+	 * @param s other string
 	 */
 	equalsIgnoreCase(s: string): boolean
 }

@@ -10,40 +10,52 @@ declare interface ArrayConstructor {
 
 declare interface Array<T> {
 	/**
+	 * get first element from array
 	 *
-	 * get first element
-	 *
-	 * @param offset skip elements
+	 * @param offset skip from first element
 	 */
 	first(offset?: number): T | undefined
 
 	/**
-	 * returns last element of array
+	 * get first element from array
+	 *
+	 * @param offset skip from last element
 	 */
 	last(offset?: number): T | undefined
 
 	/**
-	 * insert @e in position @index
+	 * insert new element in specific position
+	 *
+	 * @param index index to insert element
+	 * @param e element to insert
 	 */
 	insert(index: number, e: T): void
 
 	/**
-	 * remove any occurrence of @t from array by value
+	 * remove element from array
+	 *
+	 * @param e element to remove
 	 */
-	remove(t: T): void
+	remove(e: T): void
 
 	/**
-	 * remove element at index
+	 * remove element from array at specified index
+	 *
+	 * @param index index to remove element
 	 */
-	removeIndex(t: number): T
+	removeIndex(index: number): T
 
 	/**
-	 * all elements of @other array are in @this array
+	 * check if @other includes every element in Array
+	 *
+	 * @param other other array
 	 */
 	includesEvery(other: Array<T>): boolean
 
 	/**
-	 * this includes any of @other
+	 * check if @other includes any element in Array
+	 *
+	 * @param other other array
 	 */
 	includesAny(other: Array<T>): boolean
 }

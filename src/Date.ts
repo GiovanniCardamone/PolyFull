@@ -1,18 +1,99 @@
 declare interface Date {
+	/**
+	 * add milliseconds to Date
+	 *
+	 * @param ms milliseconds to add
+	 */
 	addMilliseconds(ms: number): void
+
+	/**
+	 * add seconds to Date
+	 *
+	 * @param s seconds to add
+	 */
 	addSeconds(s: number): void
+
+	/**
+	 * add minutes to Date
+	 *
+	 * @param m minutes to add
+	 */
 	addMinutes(m: number): void
+
+	/**
+	 * add hours to Date
+	 *
+	 * @param h hours to add
+	 */
 	addHours(h: number): void
+
+	/**
+	 * add days to Date
+	 *
+	 * @param d days to add
+	 */
 	addDate(d: number): void
+
+	/**
+	 * add months to Date
+	 *
+	 * @param m months to add
+	 */
 	addMonth(m: number): void
+
+	/**
+	 * add Years to Date
+	 *
+	 * @param y years to add
+	 */
 	addFullYear(y: number): void
 
+	/**
+	 * subtract milliseconds from Date
+	 *
+	 * @param ms milliseconds to subtract
+	 */
 	subMilliseconds(ms: number): void
+
+	/**
+	 * subtract seconds from date
+	 *
+	 * @param s seconds to subtract
+	 */
 	subSeconds(s: number): void
+
+	/**
+	 * subtract minutes from Date
+	 *
+	 * @param m minutes to subtract
+	 */
 	subMinutes(m: number): void
+
+	/**
+	 * subtract hours from Date
+	 *
+	 * @param h hours to subtract
+	 */
 	subHours(h: number): void
+
+	/**
+	 * subtract days from Date
+	 * @param d days to subtract
+	 */
 	subDate(d: number): void
+
+	/**
+	 * subtract months from Date
+	 *
+	 * @param m months to subtract
+	 */
 	subMonth(m: number): void
+
+	/**
+	 * subtract years from Date
+	 *
+	 * @param y years to subtract
+	 */
 	subFullYear(y: number): void
 }
 

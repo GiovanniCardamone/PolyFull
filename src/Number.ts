@@ -12,44 +12,187 @@ declare interface NumberConstructor {
 }
 
 declare interface Number {
+	/**
+	 * shortcut for Math.abs
+	 */
 	abs(): number
+
+	/**
+	 * shortcut for Math.acos
+	 */
 	acos(): number
+
+	/**
+	 * shortcut for Math.acosh
+	 */
 	acosh(): number
+
+	/**
+	 * shortcut for Math.asin
+	 */
 	asin(): number
+
+	/**
+	 * shortcut for Math.asinh
+	 */
 	asinh(): number
+
+	/**
+	 * shortcut for Math.atan
+	 */
 	atan(): number
+
+	/**
+	 * shortcut for Math.atan2
+	 */
 	atan2(n: number): number
+
+	/**
+	 * shortcut for Math.atanh
+	 */
 	atanh(): number
+
+	/**
+	 * shortcut for Math.cbrt
+	 */
 	cbrt(): number
+
+	/**
+	 * shortcut for Math.ceil
+	 */
 	ceil(): number
+
+	/**
+	 * shortcut for Math.clz32
+	 */
 	clz32(): number
+
+	/**
+	 * shortcut for Math.cos
+	 */
 	cos(): number
+
+	/**
+	 * shortcut for Math.cosh
+	 */
 	cosh(): number
+
+	/**
+	 * shortcut for Math.exp
+	 */
 	exp(): number
+
+	/**
+	 * shortcut for Math.expm1
+	 */
 	expm1(): number
+
+	/**
+	 * shortcut for Math.floor
+	 */
 	floor(): number
+
+	/**
+	 * shortcut for Math.fround
+	 */
 	fround(): number
+
+	/**
+	 * shortcut for Math.hypot
+	 */
 	hypot(n: number): number
+
+	/**
+	 * shortcut for Math.imul
+	 */
 	imul(n: number): number
+
+	/**
+	 * shortcut for Math.log
+	 */
 	log(): number
+
+	/**
+	 * shortcut for Math.log10
+	 */
 	log10(): number
+
+	/**
+	 * shortcut for Math.log1p
+	 */
 	log1p(): number
+
+	/**
+	 * shortcut for Math.log2
+	 */
 	log2(): number
+
+	/**
+	 * shortcut for Math.pow
+	 */
 	pow(n: number): number
+
+	/**
+	 * shortcut for Math.round
+	 */
 	round(): number
+
+	/**
+	 * shortcut for Math.sign
+	 */
 	sign(): number
+
+	/**
+	 * shortcut for Math.sin
+	 */
 	sin(): number
+
+	/**
+	 * shortcut for Math.sinh
+	 */
 	sinh(): number
+
+	/**
+	 * shortcut for Math.sqrt
+	 */
 	sqrt(): number
+
+	/**
+	 * shortcut for Math.tan
+	 */
 	tan(): number
+
+	/**
+	 * shortcut for Math.tanh
+	 */
 	tanh(): number
+
+	/**
+	 * shortcut for Math.trunc
+	 */
 	trunc(): number
-	/////////////////////////////////////
+
+	/**
+	 * check if number is even
+	 */
 	isEven(): boolean
+
+	/**
+	 * check if number is odd
+	 */
 	isOdd(): boolean
+
+	/**
+	 * check if number is prime
+	 */
 	isPrime(): boolean
+
+	/**
+	 * check if number is divisible by other number
+	 *
+	 * @param n other number
+	 */
 	isDivisibleBy(n: number): boolean
-	isPositive(): boolean
 }
 
 Number.prototype.abs = function (): number {
@@ -194,14 +337,14 @@ Number.prototype.isPrime = function (): boolean {
 	return true
 }
 
-Number.prototype.isDivisibleBy = function (n: number): boolean {
-	return (this as number) % n === 0
-}
-
 Number.prototype.isEven = function (): boolean {
 	return (this as number) % 2 === 0
 }
 
 Number.prototype.isOdd = function (): boolean {
 	return (this as number) % 2 !== 0
+}
+
+Number.prototype.isDivisibleBy = function (n: number): boolean {
+	return (this as number) % n === 0
 }

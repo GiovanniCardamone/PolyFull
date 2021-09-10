@@ -73,11 +73,11 @@ await Promise.allProperties({
 
 <style>
 table {
-  display:table;
-  width:100%;
+  display: table!important;
+  width: 100%!important;
 }
 table th:nth-child(1) {
-  width:10%;
+  width: 10%!important;
 }
 </style>
 
@@ -183,8 +183,6 @@ table th:nth-child(1) {
 | isNumeric | check if string is valid numeric |
 | isPalindrome | check if string is palindrome |
 | equalsIgnoreCase | check if string is equal to other ignoring case |
-
-
 <!-- POLYFULL-METHODS-TABLE:END -->
 
 ## :books: Documentation

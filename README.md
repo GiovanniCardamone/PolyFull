@@ -69,10 +69,6 @@ await Promise.allProperties({
 // And Many Many Others!!
 ```
 
-## :books: Documentation
-
-[Full Documentation](https://giovannicardam.one/polyfull)
-
 ## :toolbox: Summary
 
 <!-- POLYFULL-METHODS-TABLE:START - Do not remove or modify this section -->
@@ -178,8 +174,11 @@ await Promise.allProperties({
 | isPalindrome | check if string is palindrome |
 | equalsIgnoreCase | check if string is equal to other ignoring case |
 
-
 <!-- POLYFULL-METHODS-TABLE:END -->
+
+## :books: Documentation
+
+[Full Documentation](https://giovannicardam.one/polyfull)
 
 ## :label: License
 

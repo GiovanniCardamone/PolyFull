@@ -6,3 +6,4 @@ npm run build
 npm run cover
 npm run docs
 git add docs
+git add README.md

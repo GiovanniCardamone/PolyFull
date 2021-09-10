@@ -1,3 +1,12 @@
+# [0.8.0](https://github.com/GiovanniCardamone/polyfull/compare/v0.7.1...v0.8.0) (2021-09-10)
+
+
+### Features
+
+* added ArrayConstructor.zip, Array.chunk ([3beebd4](https://github.com/GiovanniCardamone/polyfull/commit/3beebd44407c07f1a5ea97892c4253775e19b56d))
+
+
+
 ## [0.7.1](https://github.com/GiovanniCardamone/polyfull/compare/v0.7.0...v0.7.1) (2021-09-10)
 
 
@@ -51,10 +60,6 @@
 
 
 ## [0.4.14](https://github.com/GiovanniCardamone/polyfull/compare/v0.4.13...v0.4.14) (2021-09-10)
-
-
-
-## [0.4.13](https://github.com/GiovanniCardamone/polyfull/compare/v0.4.12...v0.4.13) (2021-09-10)
 
 
 

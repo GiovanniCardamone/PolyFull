@@ -15,7 +15,7 @@
     "build": "tsc",
     "build:watch": "tsc --watch",
     "docs": "npm run docs:readme && npm run docs:typedoc",
-    "docs:readme": "ts-node scripts/update-readme < README.md > README.md",
+    "docs:readme": "ts-node scripts/update-readme < README.md | sponge README.md",
     "docs:typedoc": "typedoc",
     "prepublishOnly": "npm run lint && npm test && npm run build"
   },

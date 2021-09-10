@@ -2708,6 +2708,426 @@ img {
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
+		<div class="tsd-panel tsd-typography">
+			<a href="#polyfull" id="polyfull" style="color: inherit; text-decoration: none;">
+				<h1>PolyFull</h1>
+			</a>
+			<p><img src="media/images/banner.png" alt="Logo"></p>
+			<div align="center">
+				<p><img src="https://img.shields.io/badge/ES6-Supported-yellow.svg?style=for-the-badge&logo=JavaScript" alt="JavaScript"> <img src="https://img.shields.io/badge/TypeScript-Supported-blue.svg?style=for-the-badge&logo=Typescript" alt="TypeScript"></p>
+				<p><a href="https://github.com/GiovanniCardamone/polyfull/actions/workflows/npm-ci.yml"><img src="https://github.com/GiovanniCardamone/polyfull/actions/workflows/npm-ci.yml/badge.svg" alt="CI"></a>
+					<a href="https://coveralls.io/github/GiovanniCardamone/polyfull?branch=main"><img src="https://coveralls.io/repos/github/GiovanniCardamone/polyfull/badge.svg?branch=main" alt="Coverage Status"></a>
+					<a href="https://snyk.io/test/github/GiovanniCardamone/polyfull"><img src="https://snyk.io/test/github/GiovanniCardamone/polyfull/badge.svg" alt="Known Vulnerabilities"></a>
+					<a href="https://www.npmjs.com/package/polyfull"><img src="https://img.shields.io/npm/v/polyfull.svg?style=plastic" alt="NPM version"></a>
+				<a href="https://www.npmjs.com/package/polyfull"><img src="https://img.shields.io/npm/dm/polyfull.svg?style=plastic" alt="NPM downloads"></a></p>
+			</div>
+			<blockquote>
+				<p>:warning: THIS IS INTENDED TO USE ONLY IN FINAL APPLICATIONS.<br>if you use this in library, any other applications will have this injected as well</p>
+			</blockquote>
+			<p>Polyfull is a library intended for augment javascript capability, somehow javascript
+			is still missing some of basic functionality that are usually provided throught other functions.</p>
+			<p>Polyfull aim to solve this problem injecting into the core component of the language the functionality
+			that are missing.</p>
+			<a href="#package-installation" id="package-installation" style="color: inherit; text-decoration: none;">
+				<h2>:package: Installation</h2>
+			</a>
+			<pre><code class="language-bash"><span style="color: #000000">npm install polyfull</span>
+</code></pre>
+			<a href="#rocket-usage" id="rocket-usage" style="color: inherit; text-decoration: none;">
+				<h2>:rocket: Usage</h2>
+			</a>
+			<p>simply import <code>polyfull</code> to have access to supercharged functionality.</p>
+			<pre><code class="language-javascript"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;polyfull&#039;</span>
+</code></pre>
+			<a href="#chart_with_upwards_trend-examples" id="chart_with_upwards_trend-examples" style="color: inherit; text-decoration: none;">
+				<h2>:chart_with_upwards_trend: Examples</h2>
+			</a>
+			<p>Some of functions that you might need to use.</p>
+			<pre><code class="language-javascript"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;polyfull&#039;</span>
+
+<span style="color: #008000">// Array</span>
+<span style="color: #000000">[</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">].</span><span style="color: #795E26">remove</span><span style="color: #000000">(</span><span style="color: #098658">2</span><span style="color: #000000">) </span><span style="color: #008000">// =&gt; [1, 3]</span>
+<span style="color: #000000">[</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">].</span><span style="color: #795E26">removeIndex</span><span style="color: #000000">(</span><span style="color: #098658">2</span><span style="color: #000000">) </span><span style="color: #008000">// =&gt; [1, 2]</span>
+<span style="color: #000000">[</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">].</span><span style="color: #795E26">first</span><span style="color: #000000">() </span><span style="color: #008000">// =&gt; 1</span>
+<span style="color: #000000">[</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">].</span><span style="color: #795E26">last</span><span style="color: #000000">() </span><span style="color: #008000">// =&gt; 3</span>
+
+<span style="color: #008000">// Date</span>
+<span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">(</span><span style="color: #098658">0</span><span style="color: #000000">).</span><span style="color: #795E26">addHours</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">) </span><span style="color: #008000">// =&gt; 1970-01-01T01:00:00.000Z</span>
+
+<span style="color: #008000">// Number</span>
+<span style="color: #098658">7.0</span><span style="color: #000000">.</span><span style="color: #795E26">isPrime</span><span style="color: #000000">() </span><span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #008000">// Promise</span>
+<span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #267F99">Promise</span><span style="color: #000000">.</span><span style="color: #795E26">allProperties</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">a:</span><span style="color: #000000"> </span><span style="color: #267F99">Promise</span><span style="color: #000000">.</span><span style="color: #795E26">resolve</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">),</span>
+<span style="color: #000000">  </span><span style="color: #001080">b:</span><span style="color: #000000"> </span><span style="color: #267F99">Promise</span><span style="color: #000000">.</span><span style="color: #795E26">resolve</span><span style="color: #000000">(</span><span style="color: #098658">2</span><span style="color: #000000">),</span>
+<span style="color: #000000">}) </span><span style="color: #008000">// =&gt; { a: 1, b: 2 }</span>
+
+<span style="color: #008000">// String</span>
+<span style="color: #A31515">&#039;hello&#039;</span><span style="color: #000000">.</span><span style="color: #795E26">reverse</span><span style="color: #000000">() </span><span style="color: #008000">// =&gt; &quot;olleh&quot;</span>
+<span style="color: #A31515">&#039;racecar&#039;</span><span style="color: #000000">.</span><span style="color: #795E26">isPalindrome</span><span style="color: #000000">() </span><span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #008000">// And Many Many Others!!</span>
+</code></pre>
+			<a href="#books-documentation" id="books-documentation" style="color: inherit; text-decoration: none;">
+				<h2>:books: Documentation</h2>
+			</a>
+			<p><a href="https://giovannicardam.one/polyfull">Full Documentation</a></p>
+			<a href="#toolboxsummary" id="toolboxsummary" style="color: inherit; text-decoration: none;">
+				<h2>:toolbox:Summary</h2>
+			</a>
+			<!-- POLYFULL-METHODS-TABLE:START - Do not remove or modify this section -->
+			<a href="#arrayconstructor" id="arrayconstructor" style="color: inherit; text-decoration: none;">
+				<h3>ArrayConstructor</h3>
+			</a>
+			<table>
+				<thead>
+					<tr>
+						<th>Method</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody><tr>
+						<td>isNotArray</td>
+						<td>check if arguments is not array</td>
+					</tr>
+			</tbody></table>
+			<a href="#array" id="array" style="color: inherit; text-decoration: none;">
+				<h3>Array</h3>
+			</a>
+			<table>
+				<thead>
+					<tr>
+						<th>Method</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody><tr>
+						<td>first</td>
+						<td>get first element</td>
+					</tr>
+					<tr>
+						<td>last</td>
+						<td>returns last element of array</td>
+					</tr>
+					<tr>
+						<td>insert</td>
+						<td>insert @e in position @index</td>
+					</tr>
+					<tr>
+						<td>remove</td>
+						<td>remove any occurrence of @t from array by value</td>
+					</tr>
+					<tr>
+						<td>removeIndex</td>
+						<td>remove element at index</td>
+					</tr>
+					<tr>
+						<td>includesEvery</td>
+						<td>all elements of @other array are in @this array</td>
+					</tr>
+					<tr>
+						<td>includesAny</td>
+						<td>this includes any of @other</td>
+					</tr>
+			</tbody></table>
+			<a href="#date" id="date" style="color: inherit; text-decoration: none;">
+				<h3>Date</h3>
+			</a>
+			<table>
+				<thead>
+					<tr>
+						<th>Method</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody><tr>
+						<td>addMilliseconds</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>addSeconds</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>addMinutes</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>addHours</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>addDate</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>addMonth</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>addFullYear</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>subMilliseconds</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>subSeconds</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>subMinutes</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>subHours</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>subDate</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>subMonth</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>subFullYear</td>
+						<td></td>
+					</tr>
+			</tbody></table>
+			<a href="#numberconstructor" id="numberconstructor" style="color: inherit; text-decoration: none;">
+				<h3>NumberConstructor</h3>
+			</a>
+			<table>
+				<thead>
+					<tr>
+						<th>Method</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+			</table>
+			<a href="#number" id="number" style="color: inherit; text-decoration: none;">
+				<h3>Number</h3>
+			</a>
+			<table>
+				<thead>
+					<tr>
+						<th>Method</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody><tr>
+						<td>abs</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>acos</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>acosh</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>asin</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>asinh</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>atan</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>atan2</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>atanh</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>cbrt</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ceil</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>clz32</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>cos</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>cosh</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>exp</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>expm1</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>floor</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>fround</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>hypot</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>imul</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>log</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>log10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>log1p</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>log2</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>pow</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>round</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>sign</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>sin</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>sinh</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>sqrt</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>tan</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>tanh</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>trunc</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>isEven</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>isOdd</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>isPrime</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>isDivisibleBy</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>isPositive</td>
+						<td></td>
+					</tr>
+			</tbody></table>
+			<a href="#promiseconstructor" id="promiseconstructor" style="color: inherit; text-decoration: none;">
+				<h3>PromiseConstructor</h3>
+			</a>
+			<table>
+				<thead>
+					<tr>
+						<th>Method</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody><tr>
+						<td>allProperties</td>
+						<td></td>
+					</tr>
+			</tbody></table>
+			<a href="#string" id="string" style="color: inherit; text-decoration: none;">
+				<h3>String</h3>
+			</a>
+			<table>
+				<thead>
+					<tr>
+						<th>Method</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody><tr>
+						<td>reverse</td>
+						<td>reverse a string</td>
+					</tr>
+					<tr>
+						<td>toBase64</td>
+						<td>convert to base64</td>
+					</tr>
+					<tr>
+						<td>fromBase64</td>
+						<td>convert from base64</td>
+					</tr>
+					<tr>
+						<td>toTitleCase</td>
+						<td>make first letter of each word uppercase</td>
+					</tr>
+					<tr>
+						<td>isNumeric</td>
+						<td>check if string is valid numeric</td>
+					</tr>
+					<tr>
+						<td>isPalindrome</td>
+						<td>check if string is palindrome</td>
+					</tr>
+					<tr>
+						<td>equalsIgnoreCase</td>
+						<td>check if string is equal to other ignoring case</td>
+					</tr>
+			</tbody></table>
+			<!-- POLYFULL-METHODS-TABLE:END -->
+			<a href="#label-license" id="label-license" style="color: inherit; text-decoration: none;">
+				<h2>:label: License</h2>
+			</a>
+			<p><a href="https://github.com/GiovanniCardamone/polyfull/blob/main/LICENSE">MIT</a></p>
+		</div>
 		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>

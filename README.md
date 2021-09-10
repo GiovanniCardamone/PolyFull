@@ -45,26 +45,27 @@ Some of functions that you might need to use.
 import 'polyfull'
 
 // Array
-[1, 2, 3].remove(2) // => [1, 3]
-[1, 2, 3].removeIndex(2) // => [1, 2]
-[1, 2, 3].first() // => 1
-[1, 2, 3].last() // => 3
+;[1, 2, 3]
+  .remove(2) // => [1, 3]
+  [(1, 2, 3)].removeIndex(2) // => [1, 2]
+  [(1, 2, 3)].first() // => 1
+  [(1, 2, 3)].last() // => 3
 
 // Date
 new Date(0).addHours(1) // => 1970-01-01T01:00:00.000Z
 
 // Number
-7.0.isPrime() // => true
+;(7.0).isPrime() // => true
 
 // Promise
 await Promise.allProperties({
-  a: Promise.resolve(1)
-  b: Promise.resolve(2)
+  a: Promise.resolve(1),
+  b: Promise.resolve(2),
 }) // => { a: 1, b: 2 }
 
 // String
-"hello".reverse() // => "olleh"
-"racecar".isPalindrome() // => true
+'hello'.reverse() // => "olleh"
+'racecar'.isPalindrome() // => true
 
 // And Many Many Others!!
 ```

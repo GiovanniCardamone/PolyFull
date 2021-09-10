@@ -82,32 +82,32 @@ await Promise.allProperties({
 
 | Method | Description |
 | ------ | ----------- |
-| first |  get first element |
-| last | returns last element of array |
-| insert | insert @e in position @index |
-| remove | remove any occurrence of @t from array by value |
-| removeIndex | remove element at index |
-| includesEvery | all elements of @other array are in @this array |
-| includesAny | this includes any of @other |
+| first | get first element from array |
+| last | get first element from array |
+| insert | insert new element in specific position |
+| remove | remove element from array |
+| removeIndex | remove element from array at specified index |
+| includesEvery | check if @other includes every element in Array |
+| includesAny | check if @other includes any element in Array |
 
 ### Date
 
 | Method | Description |
 | ------ | ----------- |
-| addMilliseconds |  |
-| addSeconds |  |
-| addMinutes |  |
-| addHours |  |
-| addDate |  |
-| addMonth |  |
-| addFullYear |  |
-| subMilliseconds |  |
-| subSeconds |  |
-| subMinutes |  |
-| subHours |  |
-| subDate |  |
-| subMonth |  |
-| subFullYear |  |
+| addMilliseconds | add milliseconds to Date |
+| addSeconds | add seconds to Date |
+| addMinutes | add minutes to Date |
+| addHours | add hours to Date |
+| addDate | add days to Date |
+| addMonth | add months to Date |
+| addFullYear | add Years to Date |
+| subMilliseconds | subtract milliseconds from Date |
+| subSeconds | subtract seconds from date |
+| subMinutes | subtract minutes from Date |
+| subHours | subtract hours from Date |
+| subDate | subtract days from Date |
+| subMonth | subtract months from Date |
+| subFullYear | subtract years from Date |
 
 ### NumberConstructor
 
@@ -118,49 +118,48 @@ await Promise.allProperties({
 
 | Method | Description |
 | ------ | ----------- |
-| abs |  |
-| acos |  |
-| acosh |  |
-| asin |  |
-| asinh |  |
-| atan |  |
-| atan2 |  |
-| atanh |  |
-| cbrt |  |
-| ceil |  |
-| clz32 |  |
-| cos |  |
-| cosh |  |
-| exp |  |
-| expm1 |  |
-| floor |  |
-| fround |  |
-| hypot |  |
-| imul |  |
-| log |  |
-| log10 |  |
-| log1p |  |
-| log2 |  |
-| pow |  |
-| round |  |
-| sign |  |
-| sin |  |
-| sinh |  |
-| sqrt |  |
-| tan |  |
-| tanh |  |
-| trunc |  |
-| isEven |  |
-| isOdd |  |
-| isPrime |  |
-| isDivisibleBy |  |
-| isPositive |  |
+| abs | shortcut for Math.abs |
+| acos | shortcut for Math.acos |
+| acosh | shortcut for Math.acosh |
+| asin | shortcut for Math.asin |
+| asinh | shortcut for Math.asinh |
+| atan | shortcut for Math.atan |
+| atan2 | shortcut for Math.atan2 |
+| atanh | shortcut for Math.atanh |
+| cbrt | shortcut for Math.cbrt |
+| ceil | shortcut for Math.ceil |
+| clz32 | shortcut for Math.clz32 |
+| cos | shortcut for Math.cos |
+| cosh | shortcut for Math.cosh |
+| exp | shortcut for Math.exp |
+| expm1 | shortcut for Math.expm1 |
+| floor | shortcut for Math.floor |
+| fround | shortcut for Math.fround |
+| hypot | shortcut for Math.hypot |
+| imul | shortcut for Math.imul |
+| log | shortcut for Math.log |
+| log10 | shortcut for Math.log10 |
+| log1p | shortcut for Math.log1p |
+| log2 | shortcut for Math.log2 |
+| pow | shortcut for Math.pow |
+| round | shortcut for Math.round |
+| sign | shortcut for Math.sign |
+| sin | shortcut for Math.sin |
+| sinh | shortcut for Math.sinh |
+| sqrt | shortcut for Math.sqrt |
+| tan | shortcut for Math.tan |
+| tanh | shortcut for Math.tanh |
+| trunc | shortcut for Math.trunc |
+| isEven | check if number is even |
+| isOdd | check if number is odd |
+| isPrime | check if number is prime |
+| isDivisibleBy | check if number is divisible by other number |
 
 ### PromiseConstructor
 
 | Method | Description |
 | ------ | ----------- |
-| allProperties |  |
+| allProperties | resolve an object of promises |
 
 ### String
 

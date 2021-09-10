@@ -87,6 +87,22 @@ describe('Array', () => {
 	})
 
 	describe('insert', () => {
+		it('should insert element at 0', (done) => {
+			const a = []
+
+			a.insert(0, 0)
+			expect(a).to.be.deep.equal([0])
+			done()
+		})
+
+		it('should insert element at array.length', (done) => {
+			const a = [1, 2, 3]
+
+			a.insert(a.length, 4)
+			expect(a).to.be.deep.equal([1, 2, 3, 4])
+			done()
+		})
+
 		it('should inser item in position', (done) => {
 			const a = [1, 2, 3]
 
@@ -96,6 +112,22 @@ describe('Array', () => {
 			const b = [1, 2, 3]
 			b.insert(1, 42)
 			expect(b).to.deep.equal([1, 42, 2, 3])
+			done()
+		})
+
+		it('should insert element at end if index > array.length', (done) => {
+			const a = [1, 2, 3]
+
+			a.insert(a.length + 1, 5)
+			expect(a).to.deep.equal([1, 2, 3, 5])
+			done()
+		})
+
+		it('should insert element at length - i - index if index < 0', (done) => {
+			const a = [1, 2, 4]
+
+			a.insert(-1, 3)
+			expect(a).to.deep.equal([1, 2, 3, 4])
 			done()
 		})
 	})

@@ -33,7 +33,7 @@ Date.prototype.addHours = function (this: Date, h: number) {
 }
 
 Date.prototype.addDate = function (this: Date, d: number) {
-	this.setDate(this.getDay() + d)
+	this.setDate(this.getDate() + d)
 }
 
 Date.prototype.addMonth = function (this: Date, m: number) {
@@ -46,30 +46,30 @@ Date.prototype.addFullYear = function (this: Date, y: number) {
 
 //
 
-Date.prototype.subMilliseconds = function(this: Date, ms: number) {
+Date.prototype.subMilliseconds = function (this: Date, ms: number) {
 	this.setMilliseconds(this.getMilliseconds() - ms)
 }
 
-Date.prototype.subSeconds = function(this: Date, s: number) {
+Date.prototype.subSeconds = function (this: Date, s: number) {
 	this.setSeconds(this.getSeconds() - s)
 }
 
-Date.prototype.subMinutes = function(this: Date, m: number) {
+Date.prototype.subMinutes = function (this: Date, m: number) {
 	this.setMinutes(this.getMinutes() - m)
 }
 
-Date.prototype.subHours = function(this: Date, h: number) {
+Date.prototype.subHours = function (this: Date, h: number) {
 	this.setHours(this.getHours() - h)
 }
 
-Date.prototype.subDate = function(this: Date, d: number) {
+Date.prototype.subDate = function (this: Date, d: number) {
 	this.setDate(this.getDate() - d)
 }
 
-Date.prototype.subMonth = function(this: Date, m: number) {
+Date.prototype.subMonth = function (this: Date, m: number) {
 	this.setMonth(this.getMonth() - m)
 }
 
-Date.prototype.subFullYear = function(this: Date, y: number) {
+Date.prototype.subFullYear = function (this: Date, y: number) {
 	this.setFullYear(this.getFullYear() - y)
 }

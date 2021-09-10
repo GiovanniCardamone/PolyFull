@@ -71,8 +71,7 @@ await Promise.allProperties({
 
 ## :toolbox: Summary
 
-<!-- POLYFULL-METHODS-TABLE:START - Do not remove or modify this section -->
-### ArrayConstructor
+<!-- POLYFULL-METHODS-TABLE:START - Do not remove or modify this section -->### ArrayConstructor
 
 | Method | Description |
 | ------ | ----------- |

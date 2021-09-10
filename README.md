@@ -87,8 +87,8 @@ await Promise.allProperties({
 | insert | insert new element in specific position |
 | remove | remove element from array |
 | removeIndex | remove element from array at specified index |
-| includesEvery | check if @other includes every element in Array |
-| includesAny | check if @other includes any element in Array |
+| includesEvery | check if the other Array includes every element in Array |
+| includesAny | check if the other Array includes any element in Array |
 
 ### :arrow_forward:	Date
 

@@ -46,14 +46,14 @@ declare interface Array<T> {
 	removeIndex(index: number): T
 
 	/**
-	 * check if @other includes every element in Array
+	 * check if the other Array includes every element in Array
 	 *
 	 * @param other other array
 	 */
 	includesEvery(other: Array<T>): boolean
 
 	/**
-	 * check if @other includes any element in Array
+	 * check if the other Array includes any element in Array
 	 *
 	 * @param other other array
 	 */

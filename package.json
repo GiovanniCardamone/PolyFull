@@ -25,7 +25,10 @@
     "url": "git+https://github.com/GiovanniCardamone/polyfull.git"
   },
   "keywords": [
+    "node",
+    "nodejs",
     "javascript",
+    "typescript",
     "polyfill"
   ],
   "author": "Giovanni Cardamone <g.cardamone2@gmail.com>",

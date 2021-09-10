@@ -1,3 +1,12 @@
+## [0.4.15](https://github.com/GiovanniCardamone/polyfull/compare/v0.4.14...v0.4.15) (2021-09-10)
+
+
+### Bug Fixes
+
+* removed wrong file ([2a1eb96](https://github.com/GiovanniCardamone/polyfull/commit/2a1eb96a4663dd52ccd9fc28ff1a954ef5e7da22))
+
+
+
 ## [0.4.14](https://github.com/GiovanniCardamone/polyfull/compare/v0.4.13...v0.4.14) (2021-09-10)
 
 
@@ -31,10 +40,6 @@
 
 
 ## [0.4.6](https://github.com/GiovanniCardamone/polyfull/compare/v0.4.5...v0.4.6) (2021-09-10)
-
-
-
-## [0.4.5](https://github.com/GiovanniCardamone/polyfull/compare/v0.4.4...v0.4.5) (2021-09-10)
 
 
 

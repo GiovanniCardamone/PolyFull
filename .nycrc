@@ -12,6 +12,7 @@
   "functions": 90,
   "lines": 90,
   "reporter": [
-    "lcovonly"
+    "lcovonly",
+    "text"
   ]
 }

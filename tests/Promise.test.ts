@@ -1,8 +1,18 @@
-import { expect } from 'chai'
+import chai, { expect, assert } from 'chai'
+import chaiAsPromised from 'chai-as-promised'
 import '../src/Promise'
+
+chai.use(chaiAsPromised)
 
 describe('PromiseConstructor', () => {
 	describe('allProperties', () => {
+		it('should reject non object', async () => {
+			expect(Promise.allProperties(1)).to.be.rejectedWith(TypeError)
+			expect(Promise.allProperties('a')).to.be.rejectedWith(TypeError)
+			expect(Promise.allProperties(null)).to.be.rejectedWith(TypeError)
+			expect(Promise.allProperties([])).to.be.rejectedWith(TypeError)
+		})
+
 		it('should resolve promise in object values', async () => {
 			const obj = {
 				a: new Promise((resolve, reject) => resolve(1)),

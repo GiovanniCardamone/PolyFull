@@ -82,4 +82,16 @@ describe('String', () => {
 			done()
 		})
 	})
+
+	describe('equalsIgnoreCase', () => {
+		it('should be equal when equals', (done) => {
+			expect('hello'.equalsIgnoreCase('hello')).to.be.equal(true)
+			done()
+		})
+
+		it('should be equal when is equal with different case', (done) => {
+			expect('hello'.equalsIgnoreCase('HELLO')).to.be.equal(true)
+			done()
+		})
+	})
 })

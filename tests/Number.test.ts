@@ -140,4 +140,12 @@ describe('Number', () => {
 			done()
 		})
 	})
+
+	describe('goldenRatio', () => {
+		it('should calculate golden ratio of number', () => {
+			const [high, low] = (40.0).goldenRatio()
+			expect(high).to.be.closeTo(24.72, 0.1)
+			expect(low).to.be.closeTo(15.28, 0.1)
+		})
+	})
 })

@@ -55,6 +55,7 @@ new Date(0).addHours(1) // => 1970-01-01T01:00:00.000Z
 
 // Number
 7.0.isPrime() // => true
+3.0.pow(2) // => 6
 
 // Promise
 await Promise.allProperties({
@@ -149,6 +150,7 @@ await Promise.allProperties({
 | isOdd | check if number is odd |
 | isPrime | check if number is prime |
 | isDivisibleBy | check if number is divisible by other number |
+| goldenRatio | retrive the golden ratio of a number |
 
 ### :arrow_forward:	PromiseConstructor
 

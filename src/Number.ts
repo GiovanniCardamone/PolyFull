@@ -193,6 +193,13 @@ declare interface Number {
 	 * @param n other number
 	 */
 	isDivisibleBy(n: number): boolean
+
+	/**
+	 * retrive the golden ratio of a number
+	 *
+	 * @returns an array with [long side, short side]
+	 */
+	goldenRatio(): [number, number]
 }
 
 Number.prototype.abs = function (): number {
@@ -347,4 +354,13 @@ Number.prototype.isOdd = function (): boolean {
 
 Number.prototype.isDivisibleBy = function (n: number): boolean {
 	return (this as number) % n === 0
+}
+
+Number.prototype.goldenRatio = function (): [number, number] {
+	return [
+		(this as number) *
+			0.61803398874989484820458683436563811772030917980576286214,
+		(this as number) *
+			0.38196601125010515179541316563436188227969082019423713786,
+	]
 }

@@ -4,7 +4,7 @@ export function replaceTag(tag: string, content: string, text: string): string {
 		'gm'
 	)
 
-	return content.replace(tagRegex, `$1${text}$3`)
+	return content.replace(tagRegex, `$1\n${text}$3`)
 }
 
 export async function read(stream: NodeJS.ReadStream): Promise<string> {

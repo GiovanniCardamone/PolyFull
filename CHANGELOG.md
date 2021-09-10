@@ -1,3 +1,7 @@
+## [0.4.9](https://github.com/GiovanniCardamone/polyfull/compare/v0.4.8...v0.4.9) (2021-09-10)
+
+
+
 ## [0.4.8](https://github.com/GiovanniCardamone/polyfull/compare/v0.4.7...v0.4.8) (2021-09-10)
 
 
@@ -36,10 +40,6 @@
 ### Features
 
 * added String.equalsIgnoreCase ([83d36d0](https://github.com/GiovanniCardamone/polyfull/commit/83d36d08795e75aa190576f48a5761beb79efc5c))
-
-
-
-## [0.3.13](https://github.com/GiovanniCardamone/polyfull/compare/v0.3.12...v0.3.13) (2021-09-10)
 
 
 

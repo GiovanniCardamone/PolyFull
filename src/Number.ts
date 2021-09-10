@@ -200,6 +200,13 @@ declare interface Number {
 	 * @returns an array with [long side, short side]
 	 */
 	goldenRatio(): [number, number]
+
+	/**
+	 * get percentage of number
+	 *
+	 * @param p percentage to get
+	 */
+	percentage(p: number): number
 }
 
 Number.prototype.abs = function (): number {
@@ -363,4 +370,8 @@ Number.prototype.goldenRatio = function (): [number, number] {
 		(this as number) *
 			0.38196601125010515179541316563436188227969082019423713786,
 	]
+}
+
+Number.prototype.percentage = function (p: number): number {
+	return ((this as number) * p) / 100
 }

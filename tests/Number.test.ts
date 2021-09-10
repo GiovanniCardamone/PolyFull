@@ -142,10 +142,22 @@ describe('Number', () => {
 	})
 
 	describe('goldenRatio', () => {
-		it('should calculate golden ratio of number', () => {
+		it('should calculate golden ratio of number', (done) => {
 			const [high, low] = (40.0).goldenRatio()
 			expect(high).to.be.closeTo(24.72, 0.1)
 			expect(low).to.be.closeTo(15.28, 0.1)
+
+			done()
+		})
+	})
+
+	describe('percentage', () => {
+		it('should get percentage of number', (done) => {
+			expect((100.0).percentage(20)).to.be.equal(20)
+			expect((100.0).percentage(200)).to.be.equal(200)
+			expect((100.0).percentage(-10)).to.be.equal(-10)
+
+			done()
 		})
 	})
 })

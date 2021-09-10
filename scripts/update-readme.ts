@@ -99,7 +99,7 @@ function interfaceMapToTable(interfaceMap: InterfaceMap): string {
 		}, '')
 }
 
-const TEMPLATE_INTERFACE = `### {{InterfaceName}}
+const TEMPLATE_INTERFACE = `### :arrow_forward:	{{InterfaceName}}
 
 | Method | Description |
 | ------ | ----------- |

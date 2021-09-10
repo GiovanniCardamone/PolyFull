@@ -72,13 +72,13 @@ await Promise.allProperties({
 ## :toolbox: Summary
 
 <!-- POLYFULL-METHODS-TABLE:START - Do not remove or modify this section -->
-### ArrayConstructor
+### :arrow_forward:	ArrayConstructor
 
 | Method | Description |
 | ------ | ----------- |
 | isNotArray | check if arguments is not array |
 
-### Array
+### :arrow_forward:	Array
 
 | Method | Description |
 | ------ | ----------- |
@@ -90,7 +90,7 @@ await Promise.allProperties({
 | includesEvery | check if @other includes every element in Array |
 | includesAny | check if @other includes any element in Array |
 
-### Date
+### :arrow_forward:	Date
 
 | Method | Description |
 | ------ | ----------- |
@@ -109,7 +109,7 @@ await Promise.allProperties({
 | subMonth | subtract months from Date |
 | subFullYear | subtract years from Date |
 
-### Number
+### :arrow_forward:	Number
 
 | Method | Description |
 | ------ | ----------- |
@@ -150,13 +150,13 @@ await Promise.allProperties({
 | isPrime | check if number is prime |
 | isDivisibleBy | check if number is divisible by other number |
 
-### PromiseConstructor
+### :arrow_forward:	PromiseConstructor
 
 | Method | Description |
 | ------ | ----------- |
 | allProperties | resolve an object of promises |
 
-### String
+### :arrow_forward:	String
 
 | Method | Description |
 | ------ | ----------- |

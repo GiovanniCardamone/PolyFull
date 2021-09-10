@@ -75,8 +75,9 @@ function extractDocs(textFile: string, member: ts.MethodSignature): string {
 }
 
 function interfaceMapToTable(interfaceMap: InterfaceMap): string {
-	return Object.entries(interfaceMap).reduce(
-		(accInterface, [interfaceName, methodsMap]) => {
+	return Object.entries(interfaceMap)
+		.filter(([_, methodsMap]) => Object.keys(methodsMap).length > 0)
+		.reduce((accInterface, [interfaceName, methodsMap]) => {
 			return (
 				accInterface +
 				TEMPLATE_INTERFACE.replace('{{InterfaceName}}', interfaceName) +
@@ -95,9 +96,7 @@ function interfaceMapToTable(interfaceMap: InterfaceMap): string {
 				) +
 				'\n'
 			)
-		},
-		''
-	)
+		}, '')
 }
 
 const TEMPLATE_INTERFACE = `### {{InterfaceName}}

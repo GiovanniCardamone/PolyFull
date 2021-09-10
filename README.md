@@ -109,11 +109,6 @@ await Promise.allProperties({
 | subMonth | subtract months from Date |
 | subFullYear | subtract years from Date |
 
-### NumberConstructor
-
-| Method | Description |
-| ------ | ----------- |
-
 ### Number
 
 | Method | Description |

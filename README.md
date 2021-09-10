@@ -52,6 +52,9 @@ import 'polyfull'
 
 // Date
 new Date(0).addHours(1) // => 1970-01-01T01:00:00.000Z
+new Date(0).isBefore(new Date(Date.now())) // => true
+new Date(0).isAfter(new Date(Date.now())) // => false
+new Date(0).diff(new Date()) // => how many ms passed from 1970? :D
 
 // Number
 7.0.isPrime() // => true
@@ -68,6 +71,8 @@ await Promise.allProperties({
 // String
 'hello'.reverse() // => "olleh"
 'racecar'.isPalindrome() // => true
+'0x01'.isNumeric() // => true
+'polyfull'.equalsIgnoreCase('POLYFULL') // => true
 
 // And Many Many Others!!
 ```

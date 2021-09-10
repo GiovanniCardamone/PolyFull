@@ -44,6 +44,9 @@ Some of functions that you might need to use.
 ```javascript
 import 'polyfull'
 
+// ArrayConstructor
+Array.zip([1, 2, 3], ['a', 'b', 'c']) // => [[1, 'a'], [2, 'b'], [3, 'c']]
+
 // Array
 [1, 2, 3].remove(2) // => [1, 3]
 [1, 2, 3].removeIndex(2) // => [1, 2]

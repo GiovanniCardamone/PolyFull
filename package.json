@@ -1,6 +1,6 @@
 {
   "name": "polyfull",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "description": "supercharge javascript",
   "main": "dist/index.js",
   "private": false,

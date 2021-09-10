@@ -73,7 +73,7 @@ await Promise.allProperties({
 
 [Full Documentation](https://giovannicardam.one/polyfull)
 
-## :toolbox:Summary
+## :toolbox: Summary
 
 <!-- POLYFULL-METHODS-TABLE:START - Do not remove or modify this section -->
 ### ArrayConstructor

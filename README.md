@@ -71,6 +71,16 @@ await Promise.allProperties({
 
 ## :toolbox: Summary
 
+<style>
+table {
+  display:table;
+  width:100%;
+}
+table th:nth-child(1) {
+  width:10%;
+}
+</style>
+
 <!-- POLYFULL-METHODS-TABLE:START - Do not remove or modify this section -->
 ### ArrayConstructor
 
@@ -173,6 +183,7 @@ await Promise.allProperties({
 | isNumeric | check if string is valid numeric |
 | isPalindrome | check if string is palindrome |
 | equalsIgnoreCase | check if string is equal to other ignoring case |
+
 
 <!-- POLYFULL-METHODS-TABLE:END -->
 

@@ -57,10 +57,10 @@ new Date(0).addHours(1) // => 1970-01-01T01:00:00.000Z
 7.0.isPrime() // => true
 
 // Promise
-Promise.allProperties({
-  a: Promise.resolve(true)
-  b: Promise.reject(false)
-}) // => 
+await Promise.allProperties({
+  a: Promise.resolve(1)
+  b: Promise.resolve(2)
+}) // => { a: 1, b: 2 }
 
 // String
 "hello".reverse() // => "olleh"

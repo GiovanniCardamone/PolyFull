@@ -2758,10 +2758,10 @@ img {
 <span style="color: #098658">7.0</span><span style="color: #000000">.</span><span style="color: #795E26">isPrime</span><span style="color: #000000">() </span><span style="color: #008000">// =&gt; true</span>
 
 <span style="color: #008000">// Promise</span>
-<span style="color: #267F99">Promise</span><span style="color: #000000">.</span><span style="color: #795E26">allProperties</span><span style="color: #000000">({</span>
-<span style="color: #000000">  </span><span style="color: #001080">a:</span><span style="color: #000000"> </span><span style="color: #267F99">Promise</span><span style="color: #000000">.</span><span style="color: #795E26">resolve</span><span style="color: #000000">(</span><span style="color: #0000FF">true</span><span style="color: #000000">)</span>
-<span style="color: #000000">  </span><span style="color: #001080">b</span><span style="color: #000000">: </span><span style="color: #267F99">Promise</span><span style="color: #000000">.</span><span style="color: #795E26">reject</span><span style="color: #000000">(</span><span style="color: #0000FF">false</span><span style="color: #000000">)</span>
-<span style="color: #000000">}) </span><span style="color: #008000">// =&gt; </span>
+<span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #267F99">Promise</span><span style="color: #000000">.</span><span style="color: #795E26">allProperties</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">a:</span><span style="color: #000000"> </span><span style="color: #267F99">Promise</span><span style="color: #000000">.</span><span style="color: #795E26">resolve</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">)</span>
+<span style="color: #000000">  </span><span style="color: #001080">b</span><span style="color: #000000">: </span><span style="color: #267F99">Promise</span><span style="color: #000000">.</span><span style="color: #795E26">resolve</span><span style="color: #000000">(</span><span style="color: #098658">2</span><span style="color: #000000">)</span>
+<span style="color: #000000">}) </span><span style="color: #008000">// =&gt; { a: 1, b: 2 }</span>
 
 <span style="color: #008000">// String</span>
 <span style="color: #A31515">&quot;hello&quot;</span><span style="color: #000000">.</span><span style="color: #795E26">reverse</span><span style="color: #000000">() </span><span style="color: #008000">// =&gt; &quot;olleh&quot;</span>

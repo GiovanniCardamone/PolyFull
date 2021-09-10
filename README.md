@@ -71,16 +71,6 @@ await Promise.allProperties({
 
 ## :toolbox: Summary
 
-<style>
-table {
-  display: table!important;
-  width: 100%!important;
-}
-table th:nth-child(1) {
-  width: 10%!important;
-}
-</style>
-
 <!-- POLYFULL-METHODS-TABLE:START - Do not remove or modify this section -->
 ### ArrayConstructor
 

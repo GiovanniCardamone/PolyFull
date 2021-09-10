@@ -1,3 +1,12 @@
+# [0.5.0](https://github.com/GiovanniCardamone/polyfull/compare/v0.4.17...v0.5.0) (2021-09-10)
+
+
+### Features
+
+* added Numbers.goldenRatio ([bed651b](https://github.com/GiovanniCardamone/polyfull/commit/bed651b2fe6263ca30c189b3caca0f4308cb5ba2))
+
+
+
 ## [0.4.17](https://github.com/GiovanniCardamone/polyfull/compare/v0.4.16...v0.4.17) (2021-09-10)
 
 
@@ -36,10 +45,6 @@
 
 
 ## [0.4.9](https://github.com/GiovanniCardamone/polyfull/compare/v0.4.8...v0.4.9) (2021-09-10)
-
-
-
-## [0.4.8](https://github.com/GiovanniCardamone/polyfull/compare/v0.4.7...v0.4.8) (2021-09-10)
 
 
 

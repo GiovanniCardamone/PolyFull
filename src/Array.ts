@@ -1,4 +1,10 @@
 declare interface ArrayConstructor {
+	/**
+	 * check if arguments is not array
+	 *
+	 * @param arg
+	 * @returns true if not array
+	 */
 	isNotArray(arg: any): boolean
 }
 

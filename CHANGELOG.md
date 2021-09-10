@@ -1,3 +1,7 @@
+## [0.3.13](https://github.com/GiovanniCardamone/polyfull/compare/v0.3.12...v0.3.13) (2021-09-10)
+
+
+
 ## [0.3.12](https://github.com/GiovanniCardamone/polyfull/compare/v0.3.11...v0.3.12) (2021-09-10)
 
 
@@ -31,10 +35,6 @@
 
 
 ## [0.3.4](https://github.com/GiovanniCardamone/polyfull/compare/v0.3.3...v0.3.4) (2021-09-09)
-
-
-
-## [0.3.3](https://github.com/GiovanniCardamone/polyfull/compare/v0.3.2...v0.3.3) (2021-09-09)
 
 
 

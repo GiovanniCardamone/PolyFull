@@ -1,3 +1,7 @@
+## [0.18.2](https://github.com/GiovanniCardamone/polyfull/compare/v0.18.1...v0.18.2) (2021-09-11)
+
+
+
 ## [0.18.1](https://github.com/GiovanniCardamone/polyfull/compare/v0.18.0...v0.18.1) (2021-09-11)
 
 
@@ -56,15 +60,6 @@
 ### Features
 
 * added NumberConstructor.randomInt, Array.random ([895846b](https://github.com/GiovanniCardamone/polyfull/commit/895846bf9385dce43f039a28573893df46e7f3c9))
-
-
-
-# [0.13.0](https://github.com/GiovanniCardamone/polyfull/compare/v0.12.2...v0.13.0) (2021-09-11)
-
-
-### Features
-
-* added ArrayConstructor.intersect ([f71d75c](https://github.com/GiovanniCardamone/polyfull/commit/f71d75cdffbad52762289ccd77a68158c56c084a))
 
 
 

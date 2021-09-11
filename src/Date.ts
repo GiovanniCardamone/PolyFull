@@ -1,5 +1,14 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-// declare interface DateConstructor {}
+declare interface DateConstructor {
+	/**
+	 * Return a Date object representing Date.now()
+	 */
+	current(): Date
+}
+
+Date.current = function (): Date {
+	return new Date(Date.now())
+}
 
 // ===================================================== //
 

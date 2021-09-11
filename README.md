@@ -130,6 +130,12 @@ await Promise.allPropertiesSettled({
 | random | Return a random element from the array |
 | shuffle | shuffle the array sorting element in random order |
 
+### :arrow_forward: DateConstructor
+
+| Method | Description |
+| ------ | ----------- |
+| current | Return a Date object representing Date.now() |
+
 ### :arrow_forward: Date
 
 | Method | Description |

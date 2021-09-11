@@ -1,6 +1,12 @@
 import { expect } from 'chai'
 import '../src/Date'
 
+describe('DateConstuctor', () => {
+	describe('current', () => {
+		expect(Date.current()).to.be.instanceOf(Date)
+	})
+})
+
 describe('Date', () => {
 	describe('addMilliseconds', () => {
 		it('should add milliseconds', (done) => {

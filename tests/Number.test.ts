@@ -43,7 +43,7 @@ describe('Number', () => {
 	})
 
 	// method with one parameter
-	;['atan2', 'hypot', 'imul', 'pow'].forEach((method) => {
+	;['atan2', 'imul', 'pow'].forEach((method) => {
 		describe(method, () => {
 			it(`should be equal to Math.${method}`, (done) => {
 				expect((1)[method](2)).to.equal(Math[method](1, 2))

@@ -136,44 +136,44 @@ await Promise.allProperties({
 
 | Method | Description |
 | ------ | ----------- |
-| abs | shortcut for Math.abs |
-| acos | shortcut for Math.acos |
-| acosh | shortcut for Math.acosh |
-| asin | shortcut for Math.asin |
-| asinh | shortcut for Math.asinh |
-| atan | shortcut for Math.atan |
-| atan2 | shortcut for Math.atan2 |
-| atanh | shortcut for Math.atanh |
-| cbrt | shortcut for Math.cbrt |
-| ceil | shortcut for Math.ceil |
-| clz32 | shortcut for Math.clz32 |
-| cos | shortcut for Math.cos |
-| cosh | shortcut for Math.cosh |
-| exp | shortcut for Math.exp |
-| expm1 | shortcut for Math.expm1 |
-| floor | shortcut for Math.floor |
-| fround | shortcut for Math.fround |
-| hypot | shortcut for Math.hypot |
+| abs | Returns the absolute value of a number (the value without regard to whether it is positive or negative). For example, the absolute value of -5 is the same as the absolute value of 5. |
+| acos | Returns the arc cosine (or inverse cosine) of a number. |
+| acosh | Returns the inverse hyperbolic cosine of a number. |
+| asin | Returns the arcsine of a number. |
+| asinh | Returns the inverse hyperbolic sine of a number. |
+| atan | Returns the arctangent of a number. |
+| atan2 | Returns the angle (in radians) from the X axis to a point. |
+| atanh | Returns the inverse hyperbolic tangent of a number. |
+| cbrt | Returns an implementation-dependent approximation to the cube root of number. |
+| ceil | Returns the smallest integer greater than or equal to its numeric argument. |
+| clz32 | Returns the number of leading zero bits in the 32-bit binary representation of a number. |
+| cos | Returns the cosine of a number. |
+| cosh | Returns the hyperbolic cosine of a number. |
+| exp | Returns e (the base of natural logarithms) raised to a power. |
+| expm1 | Returns the result of (e^x - 1), which is an implementation-dependent approximation to subtracting 1 from the exponential function of x (e raised to the power of x, where e
+is the base of the natural logarithms). |
+| floor | Returns the greatest integer less than or equal to its numeric argument. |
+| fround | Returns the nearest single precision float representation of a number. |
 | imul | shortcut for Math.imul |
-| log | shortcut for Math.log |
+| log | Returns the natural logarithm (base e) of a number. |
 | log10 | shortcut for Math.log10 |
 | log1p | shortcut for Math.log1p |
 | log2 | shortcut for Math.log2 |
-| pow | shortcut for Math.pow |
-| round | shortcut for Math.round |
+| pow | Returns the value of a base expression taken to a specified power. |
+| round | Returns a supplied numeric expression rounded to the nearest integer. |
 | sign | shortcut for Math.sign |
-| sin | shortcut for Math.sin |
+| sin | Returns the sine of a number. |
 | sinh | shortcut for Math.sinh |
-| sqrt | shortcut for Math.sqrt |
-| tan | shortcut for Math.tan |
+| sqrt | Returns the square root of a number. |
+| tan | Returns the tangent of a number. |
 | tanh | shortcut for Math.tanh |
-| trunc | shortcut for Math.trunc |
-| isEven | check if number is even |
-| isOdd | check if number is odd |
-| isPrime | check if number is prime |
-| isDivisibleBy | check if number is divisible by other number |
-| goldenRatio | retrive the golden ratio of a number |
-| percentage | get percentage of number |
+| trunc | Returns the integral part of the a numeric expression, x, removing any fractional digits. If x is already an integer, the result is x. |
+| isEven | Return true if number is even |
+| isOdd | Return true if number is odd |
+| isPrime | Return true if number is prime |
+| isDivisibleBy | Return true if number divisible by other |
+| goldenRatio | Return golden long and short side ration of number |
+| percentage | Return percentage of number |
 
 ### :arrow_forward: PromiseConstructor
 

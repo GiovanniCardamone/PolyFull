@@ -13,94 +13,92 @@ declare interface NumberConstructor {
 
 declare interface Number {
 	/**
-	 * shortcut for Math.abs
+	 * Returns the absolute value of a number (the value without regard to whether it is positive or negative).
+	 * For example, the absolute value of -5 is the same as the absolute value of 5.
 	 */
 	abs(): number
 
 	/**
-	 * shortcut for Math.acos
+	 * Returns the arc cosine (or inverse cosine) of a number.
 	 */
 	acos(): number
 
 	/**
-	 * shortcut for Math.acosh
+	 * Returns the inverse hyperbolic cosine of a number.
 	 */
 	acosh(): number
 
 	/**
-	 * shortcut for Math.asin
+	 * Returns the arcsine of a number.
 	 */
 	asin(): number
 
 	/**
-	 * shortcut for Math.asinh
+	 * Returns the inverse hyperbolic sine of a number.
 	 */
 	asinh(): number
 
 	/**
-	 * shortcut for Math.atan
+	 * Returns the arctangent of a number.
 	 */
 	atan(): number
 
 	/**
-	 * shortcut for Math.atan2
+	 * Returns the angle (in radians) from the X axis to a point.
 	 */
 	atan2(n: number): number
 
 	/**
-	 * shortcut for Math.atanh
+	 * Returns the inverse hyperbolic tangent of a number.
 	 */
 	atanh(): number
 
 	/**
-	 * shortcut for Math.cbrt
+	 * Returns an implementation-dependent approximation to the cube root of number.
 	 */
 	cbrt(): number
 
 	/**
-	 * shortcut for Math.ceil
+	 * Returns the smallest integer greater than or equal to its numeric argument.
 	 */
 	ceil(): number
 
 	/**
-	 * shortcut for Math.clz32
+	 * Returns the number of leading zero bits in the 32-bit binary representation of a number.
 	 */
 	clz32(): number
 
 	/**
-	 * shortcut for Math.cos
+	 * Returns the cosine of a number.
 	 */
 	cos(): number
 
 	/**
-	 * shortcut for Math.cosh
+	 * Returns the hyperbolic cosine of a number.
 	 */
 	cosh(): number
 
 	/**
-	 * shortcut for Math.exp
+	 * Returns e (the base of natural logarithms) raised to a power.
 	 */
 	exp(): number
 
 	/**
-	 * shortcut for Math.expm1
+	 * Returns the result of (e^x - 1), which is an implementation-dependent approximation to
+	 * subtracting 1 from the exponential function of x (e raised to the power of x, where e
+	 * is the base of the natural logarithms).
 	 */
 	expm1(): number
 
 	/**
-	 * shortcut for Math.floor
+	 * Returns the greatest integer less than or equal to its numeric argument.
 	 */
 	floor(): number
 
 	/**
-	 * shortcut for Math.fround
+	 * Returns the nearest single precision float representation of a number.
 	 */
 	fround(): number
-
-	/**
-	 * shortcut for Math.hypot
-	 */
-	hypot(n: number): number
 
 	/**
 	 * shortcut for Math.imul
@@ -108,7 +106,7 @@ declare interface Number {
 	imul(n: number): number
 
 	/**
-	 * shortcut for Math.log
+	 * Returns the natural logarithm (base e) of a number.
 	 */
 	log(): number
 
@@ -128,12 +126,14 @@ declare interface Number {
 	log2(): number
 
 	/**
-	 * shortcut for Math.pow
+	 * Returns the value of a base expression taken to a specified power.
+	 *
+	 * @param n The exponent value of the expression.
 	 */
 	pow(n: number): number
 
 	/**
-	 * shortcut for Math.round
+	 * Returns a supplied numeric expression rounded to the nearest integer.
 	 */
 	round(): number
 
@@ -143,7 +143,7 @@ declare interface Number {
 	sign(): number
 
 	/**
-	 * shortcut for Math.sin
+	 * Returns the sine of a number.
 	 */
 	sin(): number
 
@@ -153,12 +153,12 @@ declare interface Number {
 	sinh(): number
 
 	/**
-	 * shortcut for Math.sqrt
+	 * Returns the square root of a number.
 	 */
 	sqrt(): number
 
 	/**
-	 * shortcut for Math.tan
+	 * Returns the tangent of a number.
 	 */
 	tan(): number
 
@@ -168,41 +168,42 @@ declare interface Number {
 	tanh(): number
 
 	/**
-	 * shortcut for Math.trunc
+	 * Returns the integral part of the a numeric expression, x, removing any fractional digits.
+	 * If x is already an integer, the result is x.
 	 */
 	trunc(): number
 
 	/**
-	 * check if number is even
+	 * Return true if number is even
 	 */
 	isEven(): boolean
 
 	/**
-	 * check if number is odd
+	 * Return true if number is odd
 	 */
 	isOdd(): boolean
 
 	/**
-	 * check if number is prime
+	 * Return true if number is prime
 	 */
 	isPrime(): boolean
 
 	/**
-	 * check if number is divisible by other number
+	 * Return true if number divisible by other
 	 *
 	 * @param n other number
 	 */
 	isDivisibleBy(n: number): boolean
 
 	/**
-	 * retrive the golden ratio of a number
+	 * Return golden long and short side ration of number
 	 *
 	 * @returns an array with [long side, short side]
 	 */
 	goldenRatio(): [number, number]
 
 	/**
-	 * get percentage of number
+	 * Return percentage of number
 	 *
 	 * @param p percentage to get
 	 */
@@ -275,10 +276,6 @@ Number.prototype.floor = function (): number {
 
 Number.prototype.fround = function (): number {
 	return Math.fround(this as number)
-}
-
-Number.prototype.hypot = function (n: number): number {
-	return Math.hypot(this as number, n)
 }
 
 Number.prototype.imul = function (n: number): number {

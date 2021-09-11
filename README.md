@@ -24,7 +24,7 @@ is still missing some of basic functionality that are usually provided throught 
 Polyfull aim to solve this problem injecting into the core component of the language all the functionality
 that are missing.
 
-## :information_source: Submit request for functions that are missing
+## :new: Submit request for functions that are missing
 
 Some nice feature are missing in Javascript? [Submit to me](https://github.com/GiovanniCardamone/polyfull/issues/new?assignees=GiovanniCardamone&labels=enhancement&template=feature_request.md&title=) and i will take care of it!
 

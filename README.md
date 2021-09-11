@@ -35,7 +35,7 @@ npm install polyfull
 
 ## :rocket: Usage
 
-simply import `polyfull` to have access to supercharged functionality.
+simply import `polyfull` (once in your index.ts/js) to have access to supercharged functionality.
 
 ```javascript
 import 'polyfull'

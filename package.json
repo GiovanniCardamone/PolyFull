@@ -1,7 +1,7 @@
 {
   "name": "polyfull",
   "version": "0.18.4",
-  "description": "supercharge javascript",
+  "description": "supercharge javascript applications",
   "main": "dist/index.js",
   "private": false,
   "prettier": "@giovannicardamone/prettier-config",

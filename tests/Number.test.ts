@@ -27,6 +27,18 @@ describe('NumberConstructor', () => {
 			done()
 		})
 	})
+
+	describe('randomInt', () => {
+		it('should give an int', (done) => {
+			for (let i = 0; i < 10; i++) {
+				const n = Number.randomInt()
+				expect(n).to.be.a('number')
+				expect(n % 1).to.be.equal(0)
+			}
+
+			done()
+		})
+	})
 })
 
 describe('Number', () => {

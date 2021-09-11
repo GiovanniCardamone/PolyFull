@@ -15,6 +15,14 @@ declare interface NumberConstructor {
 	 * @param max max allowed number
 	 */
 	random(min?: number, max?: number): number
+
+	/**
+	 * generate an integer between min-max (default: from Number.MIN_SAFE_INTEGER to Number.MAX_SAFE_INTEGER)
+	 *
+	 * @param min min allowed number
+	 * @param max max allowed number
+	 */
+	randomInt(min?: number, max?: number): number
 }
 
 Number.random = function (
@@ -22,6 +30,13 @@ Number.random = function (
 	max: number = Number.MAX_SAFE_INTEGER
 ) {
 	return Math.random() * (max - min) + min
+}
+
+Number.randomInt = function (
+	min: number = Number.MIN_SAFE_INTEGER,
+	max: number = Number.MAX_SAFE_INTEGER
+) {
+	return Number.random(min, max).ceil()
 }
 
 declare interface Number {

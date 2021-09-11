@@ -109,6 +109,7 @@ await Promise.allProperties({
 | includesEvery | check if the other Array includes every element in Array |
 | includesAny | check if the other Array includes any element in Array |
 | chunk | split array in cunks of desired size |
+| random | Return a random element from the array |
 
 ### :arrow_forward: Date
 
@@ -138,6 +139,7 @@ await Promise.allProperties({
 | Method | Description |
 | ------ | ----------- |
 | random | generate a number between min-max (default: from Number.MIN_SAFE_INTEGER to Number.MAX_SAFE_INTEGER) |
+| randomInt | generate an integer between min-max (default: from Number.MIN_SAFE_INTEGER to Number.MAX_SAFE_INTEGER) |
 
 ### :arrow_forward: Number
 

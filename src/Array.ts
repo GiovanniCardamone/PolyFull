@@ -147,6 +147,11 @@ declare interface Array<T> {
 	 * @param size
 	 */
 	chunk(size: number): Array<Array<T>>
+
+	/**
+	 * Return a random element from the array
+	 */
+	random(): T
 }
 
 Array.prototype.first = function (offset = 0) {
@@ -217,6 +222,10 @@ Array.prototype.chunk = function <T>(this: Array<T>, size: number) {
 	return arrays
 }
 
-Array.prototype.prepend = function <T>(this: Array<T>, e: T) {
+Array.prototype.prepend = function <T>(this: Array<T>, e: T): void {
 	this.insert(0, e)
+}
+
+Array.prototype.random = function <T>(this: Array<T>): T {
+	return this[Number.randomInt(0, this.length - 1)]
 }

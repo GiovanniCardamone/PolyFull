@@ -255,4 +255,11 @@ describe('Array', () => {
 			done()
 		})
 	})
+
+	describe('random', () => {
+		it('should extract a random element', (done) => {
+			expect([1, 2, 3]).to.include([1, 2, 3].random())
+			done()
+		})
+	})
 })

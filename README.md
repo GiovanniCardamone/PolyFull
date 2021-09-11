@@ -66,6 +66,12 @@ new Date(0).isBefore(new Date(Date.now())) // => true
 new Date(0).isAfter(new Date(Date.now())) // => false
 new Date(0).diff(new Date()) // => how many ms passed from 1970? :D
 
+// NumberConstructor
+Number.random() // => -789.0123
+Number.random(0) // => 789.0123
+Number.random(0, 100) // => 89.0123
+Number.randomInt(0) // => 42
+
 // Number
 7.0.isPrime() // => true
 3.0.pow(2) // => 6

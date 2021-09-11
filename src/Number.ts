@@ -26,8 +26,7 @@ Number.random = function (
 
 declare interface Number {
 	/**
-	 * Returns the absolute value of a number (the value without regard to whether it is positive or negative).
-	 * For example, the absolute value of -5 is the same as the absolute value of 5.
+	 * Returns the absolute value of a number (the value without regard to whether it is positive or negative). For example, the absolute value of -5 is the same as the absolute value of 5.
 	 */
 	abs(): number
 
@@ -97,9 +96,7 @@ declare interface Number {
 	exp(): number
 
 	/**
-	 * Returns the result of (e^x - 1), which is an implementation-dependent approximation to
-	 * subtracting 1 from the exponential function of x (e raised to the power of x, where e
-	 * is the base of the natural logarithms).
+	 * Returns the result of (e^x - 1), which is an implementation-dependent approximation to subtracting 1 from the exponential function of x (e raised to the power of x, where e is the base of the natural logarithms).
 	 */
 	expm1(): number
 
@@ -183,8 +180,7 @@ declare interface Number {
 	tanh(): number
 
 	/**
-	 * Returns the integral part of the a numeric expression, x, removing any fractional digits.
-	 * If x is already an integer, the result is x.
+	 * Returns the integral part of the a numeric expression, x, removing any fractional digits. If x is already an integer, the result is x.
 	 */
 	trunc(): number
 

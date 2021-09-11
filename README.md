@@ -156,8 +156,7 @@ await Promise.allProperties({
 | cos | Returns the cosine of a number. |
 | cosh | Returns the hyperbolic cosine of a number. |
 | exp | Returns e (the base of natural logarithms) raised to a power. |
-| expm1 | Returns the result of (e^x - 1), which is an implementation-dependent approximation to subtracting 1 from the exponential function of x (e raised to the power of x, where e
-is the base of the natural logarithms). |
+| expm1 | Returns the result of (e^x - 1), which is an implementation-dependent approximation to subtracting 1 from the exponential function of x (e raised to the power of x, where e is the base of the natural logarithms). |
 | floor | Returns the greatest integer less than or equal to its numeric argument. |
 | fround | Returns the nearest single precision float representation of a number. |
 | imul | Returns the result of 32-bit multiplication of two numbers. |

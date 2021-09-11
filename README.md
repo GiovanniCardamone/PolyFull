@@ -89,6 +89,7 @@ await Promise.allProperties({
 | ------ | ----------- |
 | isNotArray | check if arguments is not array |
 | zip | combine multiple array toghter by index |
+| collapse | collapse multiple array into single array |
 
 ### :arrow_forward:	Array
 
@@ -99,6 +100,7 @@ await Promise.allProperties({
 | insert | insert new element in specific position |
 | remove | remove element from array |
 | removeIndex | remove element from array at specified index |
+| prepend | prepend an element into the array |
 | includesEvery | check if the other Array includes every element in Array |
 | includesAny | check if the other Array includes any element in Array |
 | chunk | split array in cunks of desired size |
@@ -183,6 +185,7 @@ await Promise.allProperties({
 | toBase64 | convert to base64 |
 | fromBase64 | convert from base64 |
 | toTitleCase | make first letter of each word uppercase |
+| ucFirst | make first letter uppercase |
 | isNumeric | check if string is valid numeric |
 | isPalindrome | check if string is palindrome |
 | equalsIgnoreCase | check if string is equal to other ignoring case |

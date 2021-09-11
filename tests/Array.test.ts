@@ -34,6 +34,14 @@ describe('ArrayConstructor', () => {
 			done()
 		})
 	})
+
+	describe('collapse', () => {
+		it('should collapse multiple arrays', (done) => {
+			expect(Array.collapse([1, 2, 3], [4, 5, 6], [7, 8, 9])).to.deep.equal([
+				1, 2, 3, 4, 5, 6, 7, 8, 9,
+			])
+		})
+	})
 })
 
 describe('Array', () => {
@@ -173,7 +181,7 @@ describe('Array', () => {
 		it('should remove element at index', (done) => {
 			const a = [1, 2, 3]
 
-			a.removeIndex(0)
+			expect(a.removeIndex(0)).to.be.equal(1)
 			expect(a).to.deep.equal([2, 3])
 			done()
 		})
@@ -222,6 +230,16 @@ describe('Array', () => {
 			expect([1, 2, 3].chunk(1)).to.deep.equal([[1], [2], [3]])
 			expect([1, 2, 3].chunk(2)).to.deep.equal([[1, 2], [3]])
 
+			done()
+		})
+	})
+
+	describe('prepend', () => {
+		it('should prepend element', (done) => {
+			const a = [1, 2, 3]
+			a.prepend(0)
+
+			expect(a).to.deep.equal([0, 1, 2, 3])
 			done()
 		})
 	})

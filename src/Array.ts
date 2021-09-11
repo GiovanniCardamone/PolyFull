@@ -13,6 +13,47 @@ declare interface ArrayConstructor {
 	 * @param arrays arrays to combine
 	 */
 	zip(...arrays: Array<Array<any>>): Array<Array<any>>
+
+	/**
+	 * collapse multiple array into single array
+	 *
+	 * @param arrays arrays to collapse
+	 */
+	collapse(...arrays: Array<Array<any>>): Array<any>
+}
+
+Array.isNotArray = function (args: any) {
+	return !Array.isArray(args)
+}
+
+Array.zip = function (...args: Array<any>) {
+	const min = Math.min.apply(
+		null,
+		args.map((a) => a.length)
+	)
+
+	const zip: Array<any> = []
+	for (let i = 0; i < min; i++) {
+		const tmp: Array<any> = []
+
+		for (const arg of args) {
+			tmp.push(arg[i])
+		}
+
+		zip.push(tmp)
+	}
+
+	return zip
+}
+
+Array.collapse = function (...args: Array<any>) {
+	const collapse: Array<any> = []
+
+	for (const arg of args) {
+		collapse.push(...arg)
+	}
+
+	return collapse
 }
 
 declare interface Array<T> {
@@ -53,6 +94,13 @@ declare interface Array<T> {
 	removeIndex(index: number): T
 
 	/**
+	 * prepend an element into the array
+	 *
+	 * @param e element to prepend
+	 */
+	prepend(e: T): void
+
+	/**
 	 * check if the other Array includes every element in Array
 	 *
 	 * @param other other array
@@ -72,30 +120,6 @@ declare interface Array<T> {
 	 * @param size
 	 */
 	chunk(size: number): Array<Array<T>>
-}
-
-Array.isNotArray = function (args: any) {
-	return !Array.isArray(args)
-}
-
-Array.zip = function (...args: Array<any>) {
-	const min = Math.min.apply(
-		null,
-		args.map((a) => a.length)
-	)
-
-	const zip: Array<any> = []
-	for (let i = 0; i < min; i++) {
-		const tmp: Array<any> = []
-
-		for (const arg of args) {
-			tmp.push(arg[i])
-		}
-
-		zip.push(tmp)
-	}
-
-	return zip
 }
 
 Array.prototype.first = function (offset = 0) {
@@ -166,4 +190,8 @@ Array.prototype.chunk = function <T>(this: Array<T>, size: number) {
 	console.log(arrays)
 
 	return arrays
+}
+
+Array.prototype.prepend = function <T>(this: Array<T>, e: T) {
+	this.insert(0, e)
 }

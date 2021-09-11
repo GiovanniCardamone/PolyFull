@@ -20,6 +20,11 @@ declare interface String {
 	toTitleCase(): string
 
 	/**
+	 * make first letter uppercase
+	 */
+	ucFirst(): string
+
+	/**
 	 * check if string is valid numeric
 	 */
 	isNumeric(): boolean
@@ -53,6 +58,10 @@ String.prototype.toTitleCase = function (): string {
 	return this.split(' ')
 		.map((w) => w[0].toUpperCase() + w.substr(1).toLowerCase())
 		.join(' ')
+}
+
+String.prototype.ucFirst = function (): string {
+	return this[0].toUpperCase() + this.substring(1)
 }
 
 String.prototype.isNumeric = function (): boolean {

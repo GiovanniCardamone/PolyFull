@@ -2,6 +2,33 @@ import { expect } from 'chai'
 
 import '../src/Number'
 
+describe('NumberConstructor', () => {
+	describe('random', () => {
+		it('should give a random number', (done) => {
+			expect(typeof Number.random()).to.be.equal('number')
+			done()
+		})
+
+		it('should give a random number with minimum', (done) => {
+			for (let i = 0; i < 1000; i++) {
+				expect(Number.random(0)).to.be.greaterThanOrEqual(0)
+			}
+
+			done()
+		})
+
+		it('should give a random number with minimum', (done) => {
+			for (let i = 0; i < 1000; i++) {
+				expect(Number.random(Number.MIN_SAFE_INTEGER, 0)).to.be.lessThanOrEqual(
+					0
+				)
+			}
+
+			done()
+		})
+	})
+})
+
 describe('Number', () => {
 	// methods without parameter
 	;[

@@ -8,7 +8,20 @@
  * NumberConstructor
  */
 declare interface NumberConstructor {
-	// new(value?: any): number;
+	/**
+	 * generate a number between min-max (default -Infinity +Infinity)
+	 *
+	 * @param min min allowed number
+	 * @param max max allowed number
+	 */
+	random(min?: number, max?: number): number
+}
+
+Number.random = function (
+	min: number = Number.MIN_SAFE_INTEGER,
+	max: number = Number.MAX_SAFE_INTEGER
+) {
+	return Math.random() * (max - min) + min
 }
 
 declare interface Number {

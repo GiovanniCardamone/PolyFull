@@ -2758,6 +2758,9 @@ img {
 				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
 					<a href="Number.NumberConstructor.html#parseInt" class="tsd-kind-icon">parse<wbr>Int</a>
 				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a href="Number.NumberConstructor.html#random" class="tsd-kind-icon">random</a>
+				</li>
 			</ul>
 		</li>
 		<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-external">
@@ -2830,6 +2833,7 @@ img {
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="Number.NumberConstructor.html#isSafeInteger" class="tsd-kind-icon">is<wbr>Safe<wbr>Integer</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="Number.NumberConstructor.html#parseFloat" class="tsd-kind-icon">parse<wbr>Float</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="Number.NumberConstructor.html#parseInt" class="tsd-kind-icon">parse<wbr>Int</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="Number.NumberConstructor.html#random" class="tsd-kind-icon">random</a></li>
 						</ul>
 					</section>
 				</div>
@@ -3196,6 +3200,43 @@ img {
 									<p>A value between 2 and 36 that specifies the base of the number in <code>string</code>.
 										If this argument is not supplied, strings with a prefix of &#39;0x&#39; are considered hexadecimal.
 									All other strings are considered decimal.</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+				<a name="random" class="tsd-anchor"></a>
+				<h3>random</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">random<span class="tsd-signature-symbol">(</span>min<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, max<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/GiovanniCardamone/polyfull/blob/b4f8d78/src/Number.ts#L17">src/Number.ts:17</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>generate a number between min-max (default -Infinity +Infinity)</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> min: <span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>min allowed number</p>
+								</div>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> max: <span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>max allowed number</p>
 								</div>
 							</li>
 						</ul>

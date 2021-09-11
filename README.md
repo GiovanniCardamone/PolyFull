@@ -132,6 +132,12 @@ await Promise.allProperties({
 | isSame | check if two date are the same |
 | diff | difference in ms between two dates |
 
+### :arrow_forward: NumberConstructor
+
+| Method | Description |
+| ------ | ----------- |
+| random | generate a number between min-max (default -Infinity +Infinity) |
+
 ### :arrow_forward: Number
 
 | Method | Description |

@@ -24,7 +24,7 @@ is still missing some of basic functionality that are usually provided throught 
 Polyfull aim to solve this problem injecting into the core component of the language all the functionality
 that are missing.
 
-## :new: Submit request for functions that are missing
+## :new: Submit request for functionality that are missing
 
 Some nice feature are missing in Javascript? [Submit to me](https://github.com/GiovanniCardamone/polyfull/issues/new?assignees=GiovanniCardamone&labels=enhancement&template=feature_request.md&title=) and i will take care of it!
 
@@ -88,7 +88,7 @@ await Promise.allProperties({
 ## :toolbox: Summary
 
 <!-- POLYFULL-METHODS-TABLE:START - Do not remove or modify this section -->
-### :arrow_forward:	ArrayConstructor
+### :arrow_forward: ArrayConstructor
 
 | Method | Description |
 | ------ | ----------- |
@@ -96,7 +96,7 @@ await Promise.allProperties({
 | zip | combine multiple array toghter by index |
 | collapse | collapse multiple array into single array |
 
-### :arrow_forward:	Array
+### :arrow_forward: Array
 
 | Method | Description |
 | ------ | ----------- |
@@ -110,7 +110,7 @@ await Promise.allProperties({
 | includesAny | check if the other Array includes any element in Array |
 | chunk | split array in cunks of desired size |
 
-### :arrow_forward:	Date
+### :arrow_forward: Date
 
 | Method | Description |
 | ------ | ----------- |
@@ -133,7 +133,7 @@ await Promise.allProperties({
 | isSame | check if two date are the same |
 | diff | difference in ms between two dates |
 
-### :arrow_forward:	Number
+### :arrow_forward: Number
 
 | Method | Description |
 | ------ | ----------- |
@@ -176,13 +176,13 @@ await Promise.allProperties({
 | goldenRatio | retrive the golden ratio of a number |
 | percentage | get percentage of number |
 
-### :arrow_forward:	PromiseConstructor
+### :arrow_forward: PromiseConstructor
 
 | Method | Description |
 | ------ | ----------- |
 | allProperties | resolve an object of promises |
 
-### :arrow_forward:	String
+### :arrow_forward: String
 
 | Method | Description |
 | ------ | ----------- |

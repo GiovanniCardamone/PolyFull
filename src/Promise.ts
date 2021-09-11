@@ -55,6 +55,7 @@ Promise.allProperties = async function <T extends PlainObj>(
 	})
 }
 
+/* istanbul ignore next */
 if (typeof Promise.allSettled === 'function') {
 	Promise.allPropertiesSettled = async function <T extends PlainObj>(
 		promisesMap: PromisesMap<T>

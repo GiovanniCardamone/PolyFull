@@ -29,6 +29,14 @@ describe('String', () => {
 		})
 	})
 
+	describe('ucFirst', () => {
+		it('shold make first letter uppercase', (done) => {
+			expect('hello world'.ucFirst()).to.be.equal('Hello world')
+			expect('Hello world'.ucFirst()).to.be.equal('Hello world')
+			done()
+		})
+	})
+
 	describe('isNumeric', () => {
 		it('number should be numeric', (done) => {
 			expect('1'.isNumeric()).to.be.equal(true)

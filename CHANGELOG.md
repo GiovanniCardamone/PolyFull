@@ -1,3 +1,7 @@
+## [0.15.1](https://github.com/GiovanniCardamone/polyfull/compare/v0.15.0...v0.15.1) (2021-09-11)
+
+
+
 # [0.15.0](https://github.com/GiovanniCardamone/polyfull/compare/v0.14.1...v0.15.0) (2021-09-11)
 
 
@@ -51,15 +55,6 @@
 
 
 ## [0.11.1](https://github.com/GiovanniCardamone/polyfull/compare/v0.11.0...v0.11.1) (2021-09-11)
-
-
-
-# [0.11.0](https://github.com/GiovanniCardamone/polyfull/compare/v0.10.8...v0.11.0) (2021-09-11)
-
-
-### Features
-
-* added NumberConstructor.random ([21e407b](https://github.com/GiovanniCardamone/polyfull/commit/21e407b4f451ae2b00c8f54c8f16fe7b8aa731f0))
 
 
 

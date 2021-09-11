@@ -50,6 +50,8 @@ import 'polyfull'
 
 // ArrayConstructor
 Array.zip([1, 2, 3], ['a', 'b', 'c']) // => [[1, 'a'], [2, 'b'], [3, 'c']]
+Array.collapse([1], [2, 3], [4, 5, 6]) // => [1, 2, 3, 4, 5, 6]
+Array.intersect([1, 2, 3], [2, 3, 4]) // => [2, 3]
 
 // Array
 [1, 2, 3].remove(2) // => [1, 3]
@@ -74,6 +76,14 @@ await Promise.allProperties({
   a: Promise.resolve(1),
   b: Promise.resolve(2),
 }) // => { a: 1, b: 2 }
+
+await Promise.allPropertiesSettled({
+  a: Promise.resolve(1),
+  b: Promise.reject(2)
+}) // => {
+//   a: { status: 'fulfilled', value: 1 },
+//   b: { status: 'rejected', reason: 2 }
+// }
 
 // String
 'hello'.reverse() // => "olleh"

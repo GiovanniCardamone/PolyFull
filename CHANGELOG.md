@@ -1,3 +1,7 @@
+## [0.18.5](https://github.com/GiovanniCardamone/polyfull/compare/v0.18.4...v0.18.5) (2021-09-11)
+
+
+
 ## [0.18.4](https://github.com/GiovanniCardamone/polyfull/compare/v0.18.3...v0.18.4) (2021-09-11)
 
 
@@ -46,15 +50,6 @@
 
 
 ## [0.15.1](https://github.com/GiovanniCardamone/polyfull/compare/v0.15.0...v0.15.1) (2021-09-11)
-
-
-
-# [0.15.0](https://github.com/GiovanniCardamone/polyfull/compare/v0.14.1...v0.15.0) (2021-09-11)
-
-
-### Features
-
-* added ArrayConstructor.unique ([0b44cf4](https://github.com/GiovanniCardamone/polyfull/commit/0b44cf45a1509e1a6a554dcf001c028c8e2b9e27))
 
 
 

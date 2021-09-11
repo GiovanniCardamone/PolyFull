@@ -15,17 +15,18 @@
 </div>
 
 > :warning: THIS IS INTENDED TO USE ONLY IN FINAL APPLICATIONS.  
-> if you use this in library, any other applications will have this injected as well
+>
+> if you use this in library, any other applications that use your library will have `polyfull` injected as well.
 
 Polyfull is a library intended for augment javascript capability, somehow javascript
 is still missing some of basic functionality that are usually provided throught other functions.
 
-Polyfull aim to solve this problem injecting into the core component of the language the functionality
+Polyfull aim to solve this problem injecting into the core component of the language all the functionality
 that are missing.
 
 ## :information_source: Submit request for functions that are missing
 
-Some nice feature are missing in Javascript? [Submit to me](https://github.com/GiovanniCardamone/polyfull/issues/new?assignees=GiovanniCardamone&labels=enhancement&template=feature_request.md&title=) and i will take care of it
+Some nice feature are missing in Javascript? [Submit to me](https://github.com/GiovanniCardamone/polyfull/issues/new?assignees=GiovanniCardamone&labels=enhancement&template=feature_request.md&title=) and i will take care of it!
 
 ## :package: Installation
 

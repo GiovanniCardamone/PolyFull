@@ -128,6 +128,7 @@ await Promise.allPropertiesSettled({
 | includesAny | check if the other Array includes any element in Array |
 | chunk | split array in cunks of desired size |
 | random | Return a random element from the array |
+| shuffle | shuffle the array sorting element in random order |
 
 ### :arrow_forward: Date
 

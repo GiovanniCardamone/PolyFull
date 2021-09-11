@@ -167,6 +167,13 @@ declare interface Array<T> {
 	 * Return a random element from the array
 	 */
 	random(): T
+
+	/**
+	 * shuffle the array sorting element in random order
+	 *
+	 * @return itself
+	 */
+	shuffle(): Array<T>
 }
 
 Array.prototype.first = function (offset = 0) {
@@ -243,4 +250,16 @@ Array.prototype.prepend = function <T>(this: Array<T>, e: T): void {
 
 Array.prototype.random = function <T>(this: Array<T>): T {
 	return this[Number.randomInt(0, this.length - 1)]
+}
+
+Array.prototype.shuffle = function <T>(this: Array<T>): Array<T> {
+	for (let i = 0; i < this.length - 1; i++) {
+		const randomIndex = Number.randomInt(i, this.length - 1)
+
+		const tmp = this[i]
+		this[i] = this[randomIndex]
+		this[randomIndex] = tmp
+	}
+
+	return this
 }

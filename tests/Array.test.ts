@@ -271,4 +271,17 @@ describe('Array', () => {
 			done()
 		})
 	})
+
+	describe('shuffle', () => {
+		it('should shuffle array', (done) => {
+			const a = [1, 2, 3, 4].shuffle()
+
+			expect(a).to.include(1)
+			expect(a).to.include(2)
+			expect(a).to.include(3)
+			expect(a).to.include(4)
+			expect(a.length).to.be.equal(4)
+			done()
+		})
+	})
 })

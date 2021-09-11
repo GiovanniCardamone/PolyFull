@@ -1,3 +1,12 @@
+# [0.16.0](https://github.com/GiovanniCardamone/polyfull/compare/v0.15.1...v0.16.0) (2021-09-11)
+
+
+### Features
+
+* added Number.factorial ([0f8f35d](https://github.com/GiovanniCardamone/polyfull/commit/0f8f35d752ab4fcd2e07061ace36c84de3c9c708))
+
+
+
 ## [0.15.1](https://github.com/GiovanniCardamone/polyfull/compare/v0.15.0...v0.15.1) (2021-09-11)
 
 
@@ -51,10 +60,6 @@
 
 
 ## [0.11.2](https://github.com/GiovanniCardamone/polyfull/compare/v0.11.1...v0.11.2) (2021-09-11)
-
-
-
-## [0.11.1](https://github.com/GiovanniCardamone/polyfull/compare/v0.11.0...v0.11.1) (2021-09-11)
 
 
 

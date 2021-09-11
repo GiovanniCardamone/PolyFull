@@ -1,12 +1,4 @@
-/**
- * @module
- *
- * Number
- */
-
-/**
- * NumberConstructor
- */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 declare interface NumberConstructor {
 	/**
 	 * generate a number between min-max (default: from Number.MIN_SAFE_INTEGER to Number.MAX_SAFE_INTEGER)
@@ -39,6 +31,9 @@ Number.randomInt = function (
 	return Number.random(min, max).ceil()
 }
 
+// ===================================================== //
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 declare interface Number {
 	/**
 	 * Returns the absolute value of a number (the value without regard to whether it is positive or negative). For example, the absolute value of -5 is the same as the absolute value of 5.

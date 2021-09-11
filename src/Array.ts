@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 declare interface ArrayConstructor {
 	/**
 	 * check if arguments is not array
@@ -94,6 +95,9 @@ Array.unique = function (...args: Array<any>) {
 	return [...new Set(Array.prototype.concat.apply([], args))]
 }
 
+// ===================================================== //
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 declare interface Array<T> {
 	/**
 	 * get first element from array

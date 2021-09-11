@@ -1,3 +1,9 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// declare interface DateConstructor {}
+
+// ===================================================== //
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 declare interface Date {
 	/**
 	 * add milliseconds to Date

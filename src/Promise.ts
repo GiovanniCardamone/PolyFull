@@ -10,6 +10,9 @@ type PromisesMap<T extends PlainObj> = {
 	[P in keyof T]: Promise<T[P]> | T[P]
 }
 
+// ===================================================== //
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 declare interface PromiseConstructor {
 	/**
 	 * Creates an Object where Promise that are resolved in the same key of the passed Object, or rejected when any Promise is rejected.
@@ -84,3 +87,8 @@ if (typeof Promise.allSettled === 'function') {
 		})
 	}
 }
+
+// ===================================================== //
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// declare interface Promise {}

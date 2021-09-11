@@ -1,3 +1,9 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// declare interface StringConstructor {}
+
+// ===================================================== //
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 declare interface String {
 	/**
 	 * reverse a string

@@ -186,9 +186,13 @@ await Promise.allProperties({
 | fromBase64 | convert from base64 |
 | toTitleCase | make first letter of each word uppercase |
 | ucFirst | make first letter uppercase |
+| toKebabCase | make string in kebab case representation |
 | isNumeric | check if string is valid numeric |
 | isPalindrome | check if string is palindrome |
 | equalsIgnoreCase | check if string is equal to other ignoring case |
+| unrepeat | replace multiple character/string repetition with single one |
+| limit | limit the length of the string |
+| pad | Pads string left and right |
 <!-- POLYFULL-METHODS-TABLE:END -->
 
 ## :books: Documentation

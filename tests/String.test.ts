@@ -37,6 +37,21 @@ describe('String', () => {
 		})
 	})
 
+	describe('toKebabCase', () => {
+		it('should split across Uppercase letters', (done) => {
+			expect('HelloWorld'.toKebabCase()).to.be.equal('hello-world')
+			expect('helloWorld'.toKebabCase()).to.be.equal('hello-world')
+			done()
+		})
+
+		it('should split across spaces', (done) => {
+			expect('hello world'.toKebabCase()).to.be.equal('hello-world')
+			expect('Hello World'.toKebabCase()).to.be.equal('hello-world')
+			expect(' hello   world '.toKebabCase()).to.be.equal('hello-world')
+			done()
+		})
+	})
+
 	describe('isNumeric', () => {
 		it('number should be numeric', (done) => {
 			expect('1'.isNumeric()).to.be.equal(true)
@@ -99,6 +114,53 @@ describe('String', () => {
 
 		it('should be equal when is equal with different case', (done) => {
 			expect('hello'.equalsIgnoreCase('HELLO')).to.be.equal(true)
+			done()
+		})
+	})
+
+	describe('unrepeat', () => {
+		it('should suppress repetitions', (done) => {
+			expect('ababab'.unrepeat('ab')).to.be.equal('ab')
+			expect('hello ababab world'.unrepeat('ab')).to.be.equal('hello ab world')
+			done()
+		})
+
+		it('should keep when no repetition', (done) => {
+			expect('ab'.unrepeat('ab')).to.be.equal('ab')
+			expect('hello ab world'.unrepeat('ab')).to.be.equal('hello ab world')
+			done()
+		})
+	})
+
+	describe('limit', () => {
+		it('should return same string if smaller', (done) => {
+			expect('hello'.limit(4)).to.be.equal('hello')
+			expect('hello'.limit(5)).to.be.equal('hello')
+			expect('hello'.limit(8, '...')).to.be.equal('hello')
+			done()
+		})
+
+		it('should truncate string', (done) => {
+			expect('hello'.limit(3)).to.be.equal('hell')
+			expect('hello world'.limit(8, '...')).to.be.equal('hello ...')
+			done()
+		})
+	})
+
+	describe('pad', () => {
+		it('shouldnt pad if length is greather', (done) => {
+			expect('hello world'.pad(5)).to.be.equal('hello world')
+			done()
+		})
+
+		it('should pad string', (done) => {
+			expect('hello'.pad(9)).to.be.equal('  hello  ')
+			expect('hello'.pad(9, '_')).to.be.equal('__hello__')
+			done()
+		})
+
+		it('should prioritize left if not even', (done) => {
+			expect('hello'.pad(8)).to.be.equal('  hello ')
 			done()
 		})
 	})

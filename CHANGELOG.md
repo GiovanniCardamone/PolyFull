@@ -1,3 +1,12 @@
+# [0.13.0](https://github.com/GiovanniCardamone/polyfull/compare/v0.12.2...v0.13.0) (2021-09-11)
+
+
+### Features
+
+* added ArrayConstructor.intersect ([f71d75c](https://github.com/GiovanniCardamone/polyfull/commit/f71d75cdffbad52762289ccd77a68158c56c084a))
+
+
+
 ## [0.12.2](https://github.com/GiovanniCardamone/polyfull/compare/v0.12.1...v0.12.2) (2021-09-11)
 
 
@@ -41,10 +50,6 @@
 
 
 ## [0.10.6](https://github.com/GiovanniCardamone/polyfull/compare/v0.10.5...v0.10.6) (2021-09-11)
-
-
-
-## [0.10.5](https://github.com/GiovanniCardamone/polyfull/compare/v0.10.4...v0.10.5) (2021-09-11)
 
 
 

@@ -154,19 +154,19 @@ await Promise.allProperties({
 is the base of the natural logarithms). |
 | floor | Returns the greatest integer less than or equal to its numeric argument. |
 | fround | Returns the nearest single precision float representation of a number. |
-| imul | shortcut for Math.imul |
+| imul | Returns the result of 32-bit multiplication of two numbers. |
 | log | Returns the natural logarithm (base e) of a number. |
-| log10 | shortcut for Math.log10 |
-| log1p | shortcut for Math.log1p |
-| log2 | shortcut for Math.log2 |
+| log10 | Returns the base 10 logarithm of a number. |
+| log1p | Returns the natural logarithm of 1 + x. |
+| log2 | Returns the base 2 logarithm of a number. |
 | pow | Returns the value of a base expression taken to a specified power. |
 | round | Returns a supplied numeric expression rounded to the nearest integer. |
-| sign | shortcut for Math.sign |
+| sign | Returns the sign of the x, indicating whether number is positive, negative or zero. |
 | sin | Returns the sine of a number. |
-| sinh | shortcut for Math.sinh |
+| sinh | Returns the hyperbolic sine of a number. |
 | sqrt | Returns the square root of a number. |
 | tan | Returns the tangent of a number. |
-| tanh | shortcut for Math.tanh |
+| tanh | Returns the hyperbolic tangent of a number. |
 | trunc | Returns the integral part of the a numeric expression, x, removing any fractional digits. If x is already an integer, the result is x. |
 | isEven | Return true if number is even |
 | isOdd | Return true if number is odd |

@@ -101,7 +101,9 @@ declare interface Number {
 	fround(): number
 
 	/**
-	 * shortcut for Math.imul
+	 * Returns the result of 32-bit multiplication of two numbers.
+	 *
+	 * @param n Second number
 	 */
 	imul(n: number): number
 
@@ -111,17 +113,17 @@ declare interface Number {
 	log(): number
 
 	/**
-	 * shortcut for Math.log10
+	 * Returns the base 10 logarithm of a number.
 	 */
 	log10(): number
 
 	/**
-	 * shortcut for Math.log1p
+	 * Returns the natural logarithm of 1 + x.
 	 */
 	log1p(): number
 
 	/**
-	 * shortcut for Math.log2
+	 * Returns the base 2 logarithm of a number.
 	 */
 	log2(): number
 
@@ -138,7 +140,7 @@ declare interface Number {
 	round(): number
 
 	/**
-	 * shortcut for Math.sign
+	 * Returns the sign of the x, indicating whether number is positive, negative or zero.
 	 */
 	sign(): number
 
@@ -148,7 +150,7 @@ declare interface Number {
 	sin(): number
 
 	/**
-	 * shortcut for Math.sinh
+	 * Returns the hyperbolic sine of a number.
 	 */
 	sinh(): number
 
@@ -163,7 +165,7 @@ declare interface Number {
 	tan(): number
 
 	/**
-	 * shortcut for Math.tanh
+	 * Returns the hyperbolic tangent of a number.
 	 */
 	tanh(): number
 

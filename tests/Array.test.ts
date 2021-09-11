@@ -54,6 +54,15 @@ describe('ArrayConstructor', () => {
 			done()
 		})
 	})
+
+	describe('unique', () => {
+		it('should return unique elements', (done) => {
+			expect(Array.unique([1, 2], [2, 3], [3, 4])).to.be.deep.equal([
+				1, 2, 3, 4,
+			])
+			done()
+		})
+	})
 })
 
 describe('Array', () => {

@@ -27,6 +27,13 @@ declare interface ArrayConstructor {
 	 * @param arrays array to intersect
 	 */
 	intersect(...arrays: Array<Array<any>>): Array<any>
+
+	/**
+	 * Return an array with unique values for each array
+	 *
+	 * @param arrays array to uniquify
+	 */
+	unique(...arrays: Array<Array<any>>): Array<any>
 }
 
 Array.isNotArray = function (args: any) {
@@ -81,6 +88,10 @@ Array.intersect = function (...args: Array<any>) {
 	}
 
 	return intersect
+}
+
+Array.unique = function (...args: Array<any>) {
+	return [...new Set(Array.prototype.concat.apply([], args))]
 }
 
 declare interface Array<T> {

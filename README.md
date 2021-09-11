@@ -52,6 +52,7 @@ import 'polyfull'
 Array.zip([1, 2, 3], ['a', 'b', 'c']) // => [[1, 'a'], [2, 'b'], [3, 'c']]
 Array.collapse([1], [2, 3], [4, 5, 6]) // => [1, 2, 3, 4, 5, 6]
 Array.intersect([1, 2, 3], [2, 3, 4]) // => [2, 3]
+Array.unique([1, 2], [2, 3], [3, 4]) // [1, 2, 3, 4]
 
 // Array
 [1, 2, 3].remove(2) // => [1, 3]
@@ -105,6 +106,7 @@ await Promise.allPropertiesSettled({
 | zip | combine multiple array toghter by index |
 | collapse | collapse multiple array into single array |
 | intersect | Retrive intersecate elements (elements that are in each array) |
+| unique | Return an array with unique values for each array |
 
 ### :arrow_forward: Array
 

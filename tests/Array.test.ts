@@ -43,6 +43,17 @@ describe('ArrayConstructor', () => {
 			done()
 		})
 	})
+
+	describe('intersect', () => {
+		it('should intersect array', (done) => {
+			expect(Array.intersect([1, 2, 3])).to.be.deep.equal([1, 2, 3])
+			expect(Array.intersect([1, 2, 3, 7], [4, 2, 6])).to.be.deep.equal([2])
+			expect(Array.intersect([1, 2, 3, 7], [4, 2, 6], [2])).to.be.deep.equal([
+				2,
+			])
+			done()
+		})
+	})
 })
 
 describe('Array', () => {

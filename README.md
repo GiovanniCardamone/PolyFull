@@ -94,6 +94,7 @@ await Promise.allProperties({
 | isNotArray | check if arguments is not array |
 | zip | combine multiple array toghter by index |
 | collapse | collapse multiple array into single array |
+| intersect | Retrive intersecate elements (elements that are in each array) |
 
 ### :arrow_forward: Array
 

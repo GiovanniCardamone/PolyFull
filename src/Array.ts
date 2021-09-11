@@ -20,6 +20,13 @@ declare interface ArrayConstructor {
 	 * @param arrays arrays to collapse
 	 */
 	collapse(...arrays: Array<Array<any>>): Array<any>
+
+	/**
+	 * Retrive intersecate elements (elements that are in each array)
+	 *
+	 * @param arrays array to intersect
+	 */
+	intersect(...arrays: Array<Array<any>>): Array<any>
 }
 
 Array.isNotArray = function (args: any) {
@@ -54,6 +61,26 @@ Array.collapse = function (...args: Array<any>) {
 	}
 
 	return collapse
+}
+
+Array.intersect = function (...args: Array<any>) {
+	if (args.length === 1) {
+		return [...args[0]]
+	}
+
+	const intersect: Array<any> = []
+
+	const lengths = args.map((arg) => arg.length)
+	const min = Math.min.apply(null, lengths)
+	const index = lengths.indexOf(min)
+
+	for (const arg of args[index]) {
+		if (args.every((e, i) => (i === index ? true : e.includes(arg)))) {
+			intersect.push(arg)
+		}
+	}
+
+	return intersect
 }
 
 declare interface Array<T> {
@@ -186,8 +213,6 @@ Array.prototype.chunk = function <T>(this: Array<T>, size: number) {
 
 		arrays.push(tmp)
 	}
-
-	console.log(arrays)
 
 	return arrays
 }

@@ -9,7 +9,7 @@
  */
 declare interface NumberConstructor {
 	/**
-	 * generate a number between min-max (default -Infinity +Infinity)
+	 * generate a number between min-max (default: from Number.MIN_SAFE_INTEGER to Number.MAX_SAFE_INTEGER)
 	 *
 	 * @param min min allowed number
 	 * @param max max allowed number

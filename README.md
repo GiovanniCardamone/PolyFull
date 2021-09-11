@@ -136,7 +136,7 @@ await Promise.allProperties({
 
 | Method | Description |
 | ------ | ----------- |
-| random | generate a number between min-max (default -Infinity +Infinity) |
+| random | generate a number between min-max (default: from Number.MIN_SAFE_INTEGER to Number.MAX_SAFE_INTEGER) |
 
 ### :arrow_forward: Number
 

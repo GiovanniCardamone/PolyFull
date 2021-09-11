@@ -184,7 +184,8 @@ await Promise.allProperties({
 
 | Method | Description |
 | ------ | ----------- |
-| allProperties | resolve an object of promises |
+| allProperties | Creates an Object where Promise that are resolved in the same key of the passed Object, or rejected when any Promise is rejected. |
+| allPropertiesSettled | Creates an Object where Promise values that are resolved with an object of results when all of the provided Promises resolve or reject. |
 
 ### :arrow_forward: String
 

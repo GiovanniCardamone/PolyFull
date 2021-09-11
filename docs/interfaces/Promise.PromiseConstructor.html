@@ -2723,6 +2723,9 @@ img {
 					<a href="Promise.PromiseConstructor.html#allProperties" class="tsd-kind-icon">all<wbr>Properties</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external">
+					<a href="Promise.PromiseConstructor.html#allPropertiesSettled" class="tsd-kind-icon">all<wbr>Properties<wbr>Settled</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external">
 					<a href="Promise.PromiseConstructor.html#allSettled" class="tsd-kind-icon">all<wbr>Settled</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external">
@@ -2776,6 +2779,7 @@ img {
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external"><a href="Promise.PromiseConstructor.html#all" class="tsd-kind-icon">all</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external"><a href="Promise.PromiseConstructor.html#allProperties" class="tsd-kind-icon">all<wbr>Properties</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external"><a href="Promise.PromiseConstructor.html#allPropertiesSettled" class="tsd-kind-icon">all<wbr>Properties<wbr>Settled</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external"><a href="Promise.PromiseConstructor.html#allSettled" class="tsd-kind-icon">all<wbr>Settled</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external"><a href="Promise.PromiseConstructor.html#race" class="tsd-kind-icon">race</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external"><a href="Promise.PromiseConstructor.html#reject" class="tsd-kind-icon">reject</a></li>
@@ -3408,12 +3412,12 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/GiovanniCardamone/polyfull/blob/700c891/src/Promise.ts#L20">src/Promise.ts:20</a></li>
+								<li>Defined in <a href="https://github.com/GiovanniCardamone/polyfull/blob/b493f3f/src/Promise.ts#L20">src/Promise.ts:20</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>resolve an object of promises</p>
+								<p>Creates an Object where Promise that are resolved in the same key of the passed Object, or rejected when any Promise is rejected.</p>
 							</div>
 						</div>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -3433,6 +3437,42 @@ img {
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						<p>object with same keys and resolved values</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external">
+				<a name="allPropertiesSettled" class="tsd-anchor"></a>
+				<h3>all<wbr>Properties<wbr>Settled</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">all<wbr>Properties<wbr>Settled&lt;T&gt;<span class="tsd-signature-symbol">(</span>promisesMap<span class="tsd-signature-symbol">: </span><a href="../modules/Promise.html#PromisesMap" class="tsd-signature-type" data-tsd-kind="Type alias">PromisesMap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/GiovanniCardamone/polyfull/blob/b493f3f/src/Promise.ts#L27">src/Promise.ts:27</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Creates an Object where Promise values that are resolved with an object of results when all of the provided Promises resolve or reject.</p>
+							</div>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>T<span class="tsd-signature-symbol">: </span><a href="../modules/Promise.html#PlainObj" class="tsd-signature-type" data-tsd-kind="Type alias">PlainObj</a></h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>promisesMap: <a href="../modules/Promise.html#PromisesMap" class="tsd-signature-type" data-tsd-kind="Type alias">PromisesMap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>

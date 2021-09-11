@@ -65,5 +65,24 @@ describe('PromiseConstructor', () => {
 		})
 	})
 
-	describe('allPropertiesSettled', async () => {})
+	describe('allPropertiesSettled', async () => {
+		it('should reject non object', async () => {
+			expect(Promise.allPropertiesSettled(1)).to.be.rejectedWith(TypeError)
+			expect(Promise.allPropertiesSettled('a')).to.be.rejectedWith(TypeError)
+			expect(Promise.allPropertiesSettled(null)).to.be.rejectedWith(TypeError)
+			expect(Promise.allPropertiesSettled([])).to.be.rejectedWith(TypeError)
+		})
+
+		it('should return promise a', async () => {
+			expect(
+				await Promise.allPropertiesSettled({
+					a: Promise.resolve(1),
+					b: Promise.reject(2),
+				})
+			).to.be.deep.equal({
+				a: { status: 'fulfilled', value: 1 },
+				b: { status: 'rejected', reason: 2 },
+			})
+		})
+	})
 })

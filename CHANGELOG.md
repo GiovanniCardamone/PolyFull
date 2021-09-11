@@ -1,3 +1,7 @@
+## [0.10.4](https://github.com/GiovanniCardamone/polyfull/compare/v0.10.3...v0.10.4) (2021-09-11)
+
+
+
 ## [0.10.3](https://github.com/GiovanniCardamone/polyfull/compare/v0.10.2...v0.10.3) (2021-09-11)
 
 
@@ -52,15 +56,6 @@
 
 
 ## [0.6.1](https://github.com/GiovanniCardamone/polyfull/compare/v0.6.0...v0.6.1) (2021-09-10)
-
-
-
-# [0.6.0](https://github.com/GiovanniCardamone/polyfull/compare/v0.5.0...v0.6.0) (2021-09-10)
-
-
-### Features
-
-* added Numbers.percentage ([6b8ab93](https://github.com/GiovanniCardamone/polyfull/commit/6b8ab93050183c142087f7fe27e95c217dcabc75))
 
 
 

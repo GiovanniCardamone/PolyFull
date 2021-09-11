@@ -18,11 +18,10 @@
 >
 > if you use this in library, any other applications that use your library will have `polyfull` injected as well.
 
-Polyfull is a library intended for augment javascript capability, somehow javascript
-is still missing some of basic functionality that are usually provided throught other functions.
+PolyFull is a library intended to augment JavaScript capabilities. Somehow JavaScript
+is still missing some of the basic functionalities that are usually provided through other functions.
 
-Polyfull aim to solve this problem injecting into the core component of the language all the functionality
-that are missing.
+Its aim is to solve this issue by injecting the missing functionalities into the core components.
 
 ## :new: Submit request for functionality that are missing
 

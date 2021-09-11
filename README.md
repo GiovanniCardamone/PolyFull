@@ -60,6 +60,9 @@ Array.unique([1, 2], [2, 3], [3, 4]) // [1, 2, 3, 4]
 [1, 2, 3].first() // => 1
 [1, 2, 3].last() // => 3
 
+// DateConstructor
+Date.current() // => new Date(Date.now())
+
 // Date
 new Date(0).addHours(1) // => 1970-01-01T01:00:00.000Z
 new Date(0).isBefore(new Date(Date.now())) // => true

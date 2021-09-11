@@ -1,3 +1,7 @@
+## [0.10.5](https://github.com/GiovanniCardamone/polyfull/compare/v0.10.4...v0.10.5) (2021-09-11)
+
+
+
 ## [0.10.4](https://github.com/GiovanniCardamone/polyfull/compare/v0.10.3...v0.10.4) (2021-09-11)
 
 
@@ -52,10 +56,6 @@
 ### Features
 
 * addedd Date.{isBefore,isAfter,isSame,diff} ([f2a6d54](https://github.com/GiovanniCardamone/polyfull/commit/f2a6d5437e4974b3ee4b8e2d921753d65bda2089))
-
-
-
-## [0.6.1](https://github.com/GiovanniCardamone/polyfull/compare/v0.6.0...v0.6.1) (2021-09-10)
 
 
 

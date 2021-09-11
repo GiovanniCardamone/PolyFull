@@ -1,3 +1,12 @@
+# [0.18.0](https://github.com/GiovanniCardamone/polyfull/compare/v0.17.0...v0.18.0) (2021-09-11)
+
+
+### Features
+
+* added DateConstructor.current ([fbd2873](https://github.com/GiovanniCardamone/polyfull/commit/fbd287379fa96367928b60f0d871206f798a4140))
+
+
+
 # [0.17.0](https://github.com/GiovanniCardamone/polyfull/compare/v0.16.1...v0.17.0) (2021-09-11)
 
 
@@ -56,10 +65,6 @@
 
 
 ## [0.12.2](https://github.com/GiovanniCardamone/polyfull/compare/v0.12.1...v0.12.2) (2021-09-11)
-
-
-
-## [0.12.1](https://github.com/GiovanniCardamone/polyfull/compare/v0.12.0...v0.12.1) (2021-09-11)
 
 
 

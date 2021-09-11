@@ -14,9 +14,11 @@
 
 </div>
 
-> :warning: THIS IS INTENDED TO USE ONLY IN FINAL APPLICATIONS.  
+> :warning: THIS IS INTENDED TO USE ONLY IN FINAL APPLICATIONS.
 >
 > if you use this in library, any other applications that use your library will have `polyfull` injected as well.
+> please DO NOT use this if you are building a library, use this only where you have control of your node interpreter.
+> also, if you are using some other polyfiller, be sure that there is no overlaps, or something will broke. Thanks!
 
 PolyFull is a library intended to augment JavaScript capabilities. Somehow JavaScript
 is still missing some of the basic functionalities that are usually provided through other functions.

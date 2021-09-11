@@ -1,3 +1,7 @@
+## [0.10.8](https://github.com/GiovanniCardamone/polyfull/compare/v0.10.7...v0.10.8) (2021-09-11)
+
+
+
 ## [0.10.7](https://github.com/GiovanniCardamone/polyfull/compare/v0.10.6...v0.10.7) (2021-09-11)
 
 
@@ -42,15 +46,6 @@
 
 * added ArrayConstructor.collapse, Array.prepend ([7e2486f](https://github.com/GiovanniCardamone/polyfull/commit/7e2486fe055f3319da410ad997be58a9c5a7d8db))
 * added String.ucFirst ([4913f16](https://github.com/GiovanniCardamone/polyfull/commit/4913f1603e256331e532c721a30df6cc43748fe9))
-
-
-
-# [0.8.0](https://github.com/GiovanniCardamone/polyfull/compare/v0.7.1...v0.8.0) (2021-09-10)
-
-
-### Features
-
-* added ArrayConstructor.zip, Array.chunk ([3beebd4](https://github.com/GiovanniCardamone/polyfull/commit/3beebd44407c07f1a5ea97892c4253775e19b56d))
 
 
 

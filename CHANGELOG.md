@@ -1,3 +1,12 @@
+# [0.12.0](https://github.com/GiovanniCardamone/polyfull/compare/v0.11.2...v0.12.0) (2021-09-11)
+
+
+### Features
+
+* added PromiseConstructor.allPropertiesSettled ([85e79c3](https://github.com/GiovanniCardamone/polyfull/commit/85e79c3d5ca76dacf578b977f0bef886d66091e8))
+
+
+
 ## [0.11.2](https://github.com/GiovanniCardamone/polyfull/compare/v0.11.1...v0.11.2) (2021-09-11)
 
 
@@ -36,10 +45,6 @@
 
 
 ## [0.10.3](https://github.com/GiovanniCardamone/polyfull/compare/v0.10.2...v0.10.3) (2021-09-11)
-
-
-
-## [0.10.2](https://github.com/GiovanniCardamone/polyfull/compare/v0.10.1...v0.10.2) (2021-09-11)
 
 
 

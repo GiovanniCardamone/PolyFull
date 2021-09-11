@@ -199,4 +199,25 @@ describe('Number', () => {
 			done()
 		})
 	})
+
+	describe('factorial', () => {
+		it('should give 1 when <= 0', (done) => {
+			expect((0.0).factorial()).to.be.equal(1)
+			expect((-2.0).factorial()).to.be.equal(1)
+			done()
+		})
+
+		it('should calculate factorial', (done) => {
+			expect((1.0).factorial()).to.be.equal(1)
+			expect((2.0).factorial()).to.be.equal(2)
+			expect((3.0).factorial()).to.be.equal(6)
+			expect((4.0).factorial()).to.be.equal(24)
+			expect((5.0).factorial()).to.be.equal(120)
+			expect((6.0).factorial()).to.be.equal(720)
+			expect((7.0).factorial()).to.be.equal(5040)
+			expect((8.0).factorial()).to.be.equal(40320)
+			expect((9.0).factorial()).to.be.equal(362880)
+			done()
+		})
+	})
 })

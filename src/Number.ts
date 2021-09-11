@@ -234,6 +234,11 @@ declare interface Number {
 	 * @param p percentage to get
 	 */
 	percentage(p: number): number
+
+	/**
+	 * Return factorial of number
+	 */
+	factorial(): number
 }
 
 Number.prototype.abs = function (): number {
@@ -397,4 +402,18 @@ Number.prototype.goldenRatio = function (): [number, number] {
 
 Number.prototype.percentage = function (p: number): number {
 	return ((this as number) * p) / 100
+}
+
+Number.prototype.factorial = function (): number {
+	if (this <= 1) {
+		return 1
+	}
+
+	let factorial = 1
+
+	for (let i = 2; i <= this; i++) {
+		factorial *= i
+	}
+
+	return factorial
 }

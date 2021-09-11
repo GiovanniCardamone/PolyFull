@@ -200,6 +200,7 @@ await Promise.allPropertiesSettled({
 | isDivisibleBy | Return true if number divisible by other |
 | goldenRatio | Return golden long and short side ration of number |
 | percentage | Return percentage of number |
+| factorial | Return factorial of number |
 
 ### :arrow_forward: PromiseConstructor
 

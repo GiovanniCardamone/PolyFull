@@ -1,3 +1,12 @@
+# [0.10.0](https://github.com/GiovanniCardamone/polyfull/compare/v0.9.0...v0.10.0) (2021-09-11)
+
+
+### Features
+
+* added String.{toKebabCase,unrepeat,limit,pad} ([4011f33](https://github.com/GiovanniCardamone/polyfull/commit/4011f335e84ede8b61b4edd9d8e93bec49781043))
+
+
+
 # [0.9.0](https://github.com/GiovanniCardamone/polyfull/compare/v0.8.0...v0.9.0) (2021-09-11)
 
 
@@ -57,15 +66,6 @@
 
 
 ## [0.4.16](https://github.com/GiovanniCardamone/polyfull/compare/v0.4.15...v0.4.16) (2021-09-10)
-
-
-
-## [0.4.15](https://github.com/GiovanniCardamone/polyfull/compare/v0.4.14...v0.4.15) (2021-09-10)
-
-
-### Bug Fixes
-
-* removed wrong file ([2a1eb96](https://github.com/GiovanniCardamone/polyfull/commit/2a1eb96a4663dd52ccd9fc28ff1a954ef5e7da22))
 
 
 

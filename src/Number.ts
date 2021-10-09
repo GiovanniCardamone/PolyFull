@@ -363,9 +363,13 @@ Number.prototype.trunc = function (): number {
 Number.prototype.isPrime = function (): boolean {
 	if ((this as number) < 2) {
 		return false
+	} else if ((this as number) === 2) {
+		return true
+	} else if ((this as number) % 2 === 0) {
+		return false
 	}
 
-	for (let i = 2; i < (this as number); i++) {
+	for (let i = 3; i < Math.sqrt(this as number); i += 2) {
 		if ((this as number) % i === 0) {
 			return false
 		}

@@ -118,6 +118,11 @@ describe('Number', () => {
 			expect((19.0).isPrime()).to.be.equal(true)
 			done()
 		})
+
+		it('should be 21 not prime', (done) => {
+			expect((21.0).isPrime()).to.be.equal(false)
+			done()
+		})
 	})
 
 	describe('isDivisibleBy', () => {
